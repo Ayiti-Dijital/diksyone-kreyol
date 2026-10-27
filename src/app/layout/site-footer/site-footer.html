@@ -1,0 +1,76 @@
+<footer class="bg-navy-deep text-periwinkle">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+    <div>
+      <a
+        [href]="mainSiteUrl"
+        class="inline-block rounded-lg"
+        aria-label="Ayiti Dijital – sit prensipal la"
+      >
+        <img
+          src="brand/lockup-h-dark.svg"
+          alt="Ayiti Dijital"
+          width="216"
+          height="60"
+          class="h-auto w-54"
+        />
+      </a>
+      <p class="mt-4 max-w-xs text-sm leading-relaxed">
+        Diksyonè Kreyòl se yon pwojè Ayiti Dijital: enfrastrikti dijital louvri pou Ayiti.
+      </p>
+    </div>
+
+    <nav aria-labelledby="pye-diksyone">
+      <h2 id="pye-diksyone" class="font-mono text-xs tracking-[0.18em] text-sand uppercase">
+        Diksyonè
+      </h2>
+      <ul class="mt-3 space-y-1 text-sm">
+        <li>
+          <a routerLink="/" fragment="mo-jou-a" class="inline-block py-1 hover:text-sand"
+            >Mo jou a</a
+          >
+        </li>
+        <li>
+          <a routerLink="/" fragment="ede-nou" class="inline-block py-1 hover:text-sand">Ede nou</a>
+        </li>
+        <li><a [href]="repoUrl" class="inline-block py-1 hover:text-sand">Kòd la sou GitHub</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-labelledby="pye-asosyasyon">
+      <h2 id="pye-asosyasyon" class="font-mono text-xs tracking-[0.18em] text-sand uppercase">
+        Ayiti Dijital
+      </h2>
+      <ul class="mt-3 space-y-1 text-sm">
+        <li>
+          <a [href]="mainSiteUrl" class="inline-block py-1 hover:text-sand">ayitidijital.org</a>
+        </li>
+        <li>
+          <a [href]="contactHref" class="inline-block py-1 break-all hover:text-sand">{{
+            contactEmail
+          }}</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav aria-labelledby="pye-legal">
+      <h2 id="pye-legal" class="font-mono text-xs tracking-[0.18em] text-sand uppercase">Legal</h2>
+      <ul class="mt-3 space-y-1 text-sm">
+        <li>
+          <a routerLink="/enfomasyon-legal" class="inline-block py-1 hover:text-sand"
+            >Enfòmasyon legal</a
+          >
+        </li>
+        <li>
+          <a routerLink="/konfidansyalite" class="inline-block py-1 hover:text-sand"
+            >Konfidansyalite</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-white/10">
+    <p class="mx-auto max-w-6xl px-4 py-5 text-xs sm:px-6">
+      © 2026 Ayiti Dijital e.V. · Done: CC BY-NC-SA 4.0 · Kòd: Apache-2.0
+    </p>
+  </div>
+</footer>

@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+/* Ayiti Dijital brand colors (from the live ayitidijital.org theme). System fonts only:
+   nothing is loaded from another server. */
+@theme {
+  --color-navy: #12246b;
+  --color-navy-deep: #0e1b4d;
+  --color-red: #d21034;
+  --color-gold: #f2a20c;
+  --color-gold-deep: #9c6400;
+  --color-sand: #f4efe6;
+  --color-sky: #dce8fa;
+  --color-periwinkle: #b9c6f2;
+  --color-ink: #161c3b;
+  --color-ink-soft: #4a5170;
+  --color-paper: #fcfaf5;
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-navy-deep);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}

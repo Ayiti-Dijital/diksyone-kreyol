@@ -1,0 +1,165 @@
+<!-- Hero: what this is, and the search box -->
+<section class="relative overflow-hidden bg-navy-deep text-sand" aria-labelledby="tit-paj">
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute -top-40 -left-40 size-[34rem] rounded-full bg-[radial-gradient(circle,rgba(242,162,12,0.16),transparent_68%)]"
+  ></div>
+  <div class="relative mx-auto max-w-6xl px-4 pt-10 pb-14 sm:px-6 sm:pt-16 sm:pb-20">
+    <p class="font-mono text-xs tracking-[0.2em] text-gold uppercase">Diksyonè Kreyòl–Kreyòl</p>
+    <h1
+      id="tit-paj"
+      class="mt-4 max-w-3xl font-serif text-[2.6rem] leading-[1.08] text-balance sm:text-6xl"
+    >
+      Chak mo Kreyòl, esplike an Kreyòl.
+    </h1>
+    <p class="mt-5 max-w-2xl text-lg leading-relaxed text-periwinkle text-pretty">
+      Yon diksyonè gratis e louvri sou entènèt, ak definisyon, egzanp ak pwononsyasyon. Ayiti
+      Dijital ap bati l ansanm ak moun ki pale Kreyòl.
+    </p>
+    <dk-search-preview class="mt-8 block max-w-2xl" />
+
+    <div class="mt-10 border-t border-white/10 pt-6">
+      <h2 id="alfabe" class="font-mono text-xs tracking-[0.18em] text-periwinkle uppercase">
+        Alfabè Kreyòl la · 32 lèt ak gwoup lèt
+      </h2>
+      <ul aria-labelledby="alfabe" class="mt-3 flex flex-wrap gap-1.5 font-serif text-lg">
+        @for (letter of alfabe; track letter) {
+          <li
+            class="grid h-9 min-w-9 place-items-center rounded-md px-2 ring-1 ring-white/10"
+            [class.text-gold]="letter.length > 1"
+          >
+            {{ letter }}
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Word of the day: a preview of what an entry page will look like -->
+<section id="mo-jou-a" class="scroll-mt-4 bg-paper" aria-labelledby="mo-jou-a-tit">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_1.6fr] lg:py-24">
+    <div>
+      <h2 id="mo-jou-a-tit" class="font-serif text-4xl text-navy">Mo jou a</h2>
+      <p class="mt-4 max-w-sm leading-relaxed text-ink-soft">
+        Men kijan yon paj mo ap ye nan diksyonè a: ekriti, pwononsyasyon, sans ak egzanp, tout an
+        Kreyòl.
+      </p>
+    </div>
+
+    <article
+      aria-labelledby="mo-konbit"
+      class="rounded-[1.75rem] border border-ink/10 bg-white p-6 shadow-[0_24px_60px_-40px_rgba(22,28,59,0.5)] sm:p-10"
+    >
+      <p
+        class="flex flex-wrap items-center gap-2 font-mono text-xs tracking-[0.18em] text-red uppercase"
+      >
+        Mo jou a
+        <span class="rounded-full bg-sand px-2.5 py-0.5 tracking-normal text-gold-deep normal-case">
+          bouyon
+        </span>
+      </p>
+      <div class="mt-3 flex flex-wrap items-baseline gap-x-4 gap-y-1">
+        <h3 id="mo-konbit" class="font-serif text-5xl text-navy sm:text-6xl">konbit</h3>
+        <span class="font-mono text-lg text-ink-soft">/kɔ̃bit/</span>
+        <span class="font-serif text-lg text-ink-soft italic">non</span>
+      </div>
+
+      <dl class="mt-8 grid gap-x-8 gap-y-5 border-t border-ink/10 pt-6 sm:grid-cols-[8.5rem_1fr]">
+        <dt class="font-mono text-xs tracking-[0.15em] text-ink-soft uppercase sm:pt-1">Silab</dt>
+        <dd class="font-serif text-lg">kon·bit</dd>
+
+        <dt class="font-mono text-xs tracking-[0.15em] text-ink-soft uppercase sm:pt-1">Sans</dt>
+        <dd class="text-lg leading-relaxed">
+          Travay ansanm: vwazen ak zanmi vin ede yon moun fè yon gwo travay, tankou travay jaden,
+          san yo pa peye yo. Moun ki resevwa èd la bay manje.
+        </dd>
+
+        <dt class="font-mono text-xs tracking-[0.15em] text-ink-soft uppercase sm:pt-1">Egzanp</dt>
+        <dd class="font-serif text-lg text-ink italic">
+          «Tout katye a te vin nan konbit la pou plante pwa.»
+        </dd>
+      </dl>
+
+      <p class="mt-8 rounded-xl bg-sand/60 px-4 py-3 text-sm text-ink-soft">
+        <strong class="text-ink">Bouyon:</strong> yon moun ki pale Kreyòl kòm lang manman l poko
+        tcheke antre sa a.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- What the dictionary will be -->
+<section class="border-t border-ink/10 bg-paper" aria-labelledby="sa-li-ye">
+  <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+    <h2 id="sa-li-ye" class="font-serif text-4xl text-navy">Sa diksyonè a ap ye</h2>
+    <ol class="mt-10 grid gap-10 md:grid-cols-3">
+      <li class="border-t-2 border-red pt-5">
+        <p class="font-mono text-sm text-red">01</p>
+        <h3 class="mt-2 text-xl font-semibold text-ink">An Kreyòl nèt</h3>
+        <p class="mt-2 leading-relaxed text-ink-soft">
+          Definisyon ak egzanp yo ekri an Kreyòl, pou moun ki pale Kreyòl.
+        </p>
+      </li>
+      <li class="border-t-2 border-navy pt-5">
+        <p class="font-mono text-sm text-navy">02</p>
+        <h3 class="mt-2 text-xl font-semibold text-ink">Gratis pou tout moun</h3>
+        <p class="mt-2 leading-relaxed text-ink-soft">
+          Tout moun ka li l gratis. Done yo anba lisans CC BY-NC-SA 4.0: ou ka sèvi ak yo si ou site
+          Ayiti Dijital epi ou kite yo anba menm lisans lan. Pou fè lajan ak yo, fòk ou gen pèmisyon
+          nou.
+        </p>
+      </li>
+      <li class="border-t-2 border-gold pt-5">
+        <p class="font-mono text-sm text-gold-deep">03</p>
+        <h3 class="mt-2 text-xl font-semibold text-ink">Moun ki pale Kreyòl tcheke l</h3>
+        <p class="mt-2 leading-relaxed text-ink-soft">
+          Yon moun ki pale Kreyòl kòm lang manman l tcheke chak mo anvan li pibliye.
+        </p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- How to help -->
+<section id="ede-nou" class="scroll-mt-4 bg-sand" aria-labelledby="ede-nou-tit">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-24">
+    <div>
+      <h2 id="ede-nou-tit" class="font-serif text-4xl text-navy">Ede nou bati l</h2>
+      <figure class="mt-6">
+        <blockquote class="font-serif text-3xl leading-snug text-ink">
+          « Men anpil chay pa lou »
+        </blockquote>
+        <figcaption class="mt-2 text-ink-soft">Anpil men fè chay la vin lejè.</figcaption>
+      </figure>
+    </div>
+    <div>
+      <ul class="space-y-4 text-lg">
+        <li class="flex gap-3">
+          <span aria-hidden="true" class="mt-2.5 size-2 shrink-0 rounded-full bg-red"></span>
+          Ekri definisyon ak egzanp an Kreyòl.
+        </li>
+        <li class="flex gap-3">
+          <span aria-hidden="true" class="mt-2.5 size-2 shrink-0 rounded-full bg-navy"></span>
+          Tcheke mo yo, si Kreyòl se lang manman w.
+        </li>
+        <li class="flex gap-3">
+          <span aria-hidden="true" class="mt-2.5 size-2 shrink-0 rounded-full bg-gold"></span>
+          Pwopoze mo ki manke.
+        </li>
+      </ul>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a
+          [href]="helpHref"
+          class="rounded-xl bg-navy px-6 py-3 font-semibold text-sand hover:bg-navy-deep"
+          >Ekri nou</a
+        >
+        <a
+          [href]="repoUrl"
+          class="rounded-xl px-6 py-3 font-semibold text-navy ring-1 ring-navy/30 hover:bg-white/60"
+          >Kòd la sou GitHub</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
