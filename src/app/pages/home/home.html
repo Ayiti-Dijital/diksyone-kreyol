@@ -74,54 +74,82 @@
     </article>
   </section>
 
+  <!-- The dictionary's tools, each shown with a real sample of what it holds -->
   <section class="mt-10" aria-labelledby="zouti-tit">
     <dk-section-title icon="book" headingId="zouti-tit">Zouti diksyonè a</dk-section-title>
-    <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-      @for (tile of tiles; track tile.title) {
-        <li
-          class="card relative flex flex-col overflow-hidden border-t-4 p-6"
-          [class]="tile.accent"
-        >
-          <img
-            src="brand/mark-light.svg"
-            alt=""
-            aria-hidden="true"
-            width="128"
-            height="128"
-            class="pointer-events-none absolute -right-8 -bottom-8 size-32 opacity-[0.07]"
-          />
-          <span class="grid size-12 place-items-center rounded-full" [class]="tile.badge">
-            <dk-icon [name]="tile.icon" class="size-6" />
-          </span>
-          <h3 class="mt-4 text-lg font-bold text-ink">{{ tile.title }}</h3>
-          <p class="mt-2 flex-1 text-sm leading-relaxed text-ink-soft">{{ tile.text }}</p>
-          @if (tile.path) {
-            <a
-              [routerLink]="tile.path"
-              class="mt-5 inline-flex items-center gap-2 self-start rounded-full bg-navy px-4 py-2 text-sm font-semibold text-white after:absolute after:inset-0 hover:bg-navy-deep"
-            >
-              Louvri
-              <svg
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                class="size-4"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M4 12h15M14 6l6 6-6 6" />
-              </svg>
-            </a>
-          } @else {
-            <span
-              class="mt-5 self-start rounded-full bg-sand px-3 py-1 text-xs font-semibold tracking-wider text-gold-deep uppercase"
-              >Byento</span
-            >
+    <ul
+      class="card grid divide-y divide-line sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x"
+    >
+      <li
+        class="group relative flex flex-col p-6 transition-colors hover:bg-paper sm:border-b sm:border-line lg:border-b-0 lg:p-7"
+      >
+        <p class="font-mono text-xs tracking-[0.16em] text-muted uppercase">
+          <span class="text-red">01</span> · Diksyonè Kreyòl
+        </p>
+        <p class="mt-7 font-serif text-5xl leading-none text-navy">
+          @for (part of sample.syllables; track $index; let first = $first) {
+            @if (!first) {
+              <span class="text-red">·</span>
+            }
+            <span>{{ part }}</span>
           }
-        </li>
-      }
+        </p>
+        <p class="mt-3 font-mono text-sm text-muted">
+          /{{ sample.phones }}/ · {{ sample.category }}
+        </p>
+        <p class="mt-6 flex-1 text-sm leading-relaxed text-ink-soft">
+          {{ entries.length }} mo, chak ak sans, egzanp ak pwononsyasyon an Kreyòl.
+        </p>
+        <a
+          routerLink="/let/a"
+          class="mt-6 text-sm font-semibold text-link after:absolute after:inset-0 group-hover:underline"
+          >Louvri diksyonè a →</a
+        >
+      </li>
+
+      <li
+        class="flex flex-col p-6 sm:border-b sm:border-l sm:border-line lg:border-b-0 lg:border-l-0 lg:p-7"
+      >
+        <p class="font-mono text-xs tracking-[0.16em] text-muted uppercase">
+          <span class="text-red">02</span> · Sinonim ak kontrè
+        </p>
+        <p class="mt-7 font-serif text-4xl leading-none text-navy">zanmi</p>
+        <p class="mt-2 font-serif text-4xl leading-none text-navy/45">
+          <span class="text-2xl text-red">≠</span> lènmi
+        </p>
+        <p class="mt-6 flex-1 text-sm leading-relaxed text-ink-soft">
+          {{ synonyms }} sinonim ak {{ antonyms }} kontrè pou kounye a. Lis la ap grandi ak chak mo.
+        </p>
+        <p class="mt-6 font-mono text-xs tracking-[0.16em] text-gold-deep uppercase">Byento</p>
+      </li>
+
+      <li class="flex flex-col p-6 lg:p-7">
+        <p class="font-mono text-xs tracking-[0.16em] text-muted uppercase">
+          <span class="text-red">03</span> · Gramè Kreyòl
+        </p>
+        <p class="mt-7 font-serif text-4xl leading-none text-navy">
+          m <span class="underline decoration-gold decoration-4 underline-offset-8">ap</span> manje
+        </p>
+        <p class="mt-4 text-xs text-muted">«ap»: mak pou yon aksyon k ap fèt kounye a</p>
+        <p class="mt-5 flex-1 text-sm leading-relaxed text-ink-soft">
+          Detèminan, mak tan ak aspè, fraz: gramè Kreyòl la, esplike senp.
+        </p>
+        <p class="mt-6 font-mono text-xs tracking-[0.16em] text-gold-deep uppercase">Byento</p>
+      </li>
+
+      <li class="flex flex-col p-6 sm:border-l sm:border-line lg:border-l-0 lg:p-7">
+        <p class="font-mono text-xs tracking-[0.16em] text-muted uppercase">
+          <span class="text-red">04</span> · Diksyonè pou lekòl
+        </p>
+        <p class="mt-7 font-serif text-4xl leading-none tracking-wide text-navy">
+          a <span class="text-red">an</span> b <span class="text-red">ch</span>
+        </p>
+        <p class="mt-4 text-xs text-muted">Premye lèt alfabè a, pou aprann li</p>
+        <p class="mt-5 flex-1 text-sm leading-relaxed text-ink-soft">
+          Diksyonè pou timoun 7–10 an ak 10–15 an.
+        </p>
+        <p class="mt-6 font-mono text-xs tracking-[0.16em] text-gold-deep uppercase">Byento</p>
+      </li>
     </ul>
   </section>
 
