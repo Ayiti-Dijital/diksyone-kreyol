@@ -22,6 +22,17 @@
       "lalin"
     ]
   },
+  "ekspresyon": [
+    {
+      "ekspresyon": "solèy leve",
+      "sans": "Lè solèy la parèt nan maten."
+    },
+    {
+      "ekspresyon": "solèy kouche",
+      "sans": "Lè solèy la ap disparèt nan aswè."
+    }
+  ],
+  "orijin": "Soti nan fransè «soleil».",
   "sous": {
     "ekri_pa": "Ayiti Dijital",
     "baze_sou": "bouyon"

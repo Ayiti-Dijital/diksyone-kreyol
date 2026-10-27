@@ -65,6 +65,25 @@ describe('Mo', () => {
     expect(page.textContent).toContain('Se premye mo nan diksyonè a.');
   });
 
+  it('lists the sections of the word in the menu, in page order', async () => {
+    const page = await render('solèy');
+    const menu = [...page.querySelectorAll('nav[aria-label="Sou paj sa a"] a')].map((a) =>
+      a.textContent?.trim(),
+    );
+    expect(menu).toEqual(['Sans', 'Orijin', 'Ekspresyon yo', 'Gade tou', 'Feyte diksyonè a']);
+    expect(page.querySelector('#ekspresyon')?.textContent).toContain('solèy kouche');
+    expect(page.querySelector('#orijin')?.textContent).toContain('«soleil»');
+  });
+
+  it('shows synonyms and antonyms, linked only when the dictionary has them', async () => {
+    const page = await render('zanmi');
+    const section = page.querySelector('#sinonim')!;
+    expect(section.textContent).toContain('Kontrè:');
+    expect(section.textContent).toContain('lènmi');
+    expect(section.querySelector('a')).toBeNull();
+    expect(page.querySelector('#ekspresyon')).toBeNull();
+  });
+
   it('offers to propose a word that is not in the dictionary', async () => {
     const page = await render('lekol');
     expect(page.querySelector('h1')?.textContent).toContain('Nou poko gen mo «lekol»');

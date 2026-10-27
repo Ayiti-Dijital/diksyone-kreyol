@@ -24,10 +24,20 @@
     }
   ],
   "mo_ki_gen_rapo": {
+    "sinonim": [
+      "selebrasyon"
+    ],
     "gade_tou": [
       "gato"
     ]
   },
+  "ekspresyon": [
+    {
+      "ekspresyon": "Bòn fèt!",
+      "sans": "Sa ou di yon moun jou anivèsè li oswa jou yon fèt."
+    }
+  ],
+  "orijin": "Soti nan fransè «fête».",
   "sous": {
     "ekri_pa": "Ayiti Dijital",
     "baze_sou": "bouyon"

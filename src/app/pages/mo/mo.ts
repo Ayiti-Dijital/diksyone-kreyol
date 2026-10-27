@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { Breadcrumb, Crumb } from '../../shared/breadcrumb/breadcrumb';
 import { ENTRIES, displayPhones, findEntry } from '../../shared/diksyone';
@@ -7,6 +8,12 @@ import { WordActions } from '../../shared/word-actions/word-actions';
 
 /** How many words the browse lists show on each side. */
 const BROWSE = 5;
+
+/** A section of the word card, listed in the menu on the left. */
+interface PageSection {
+  readonly id: string;
+  readonly label: string;
+}
 
 /** One word of the dictionary: /mo/:id */
 @Component({
@@ -29,6 +36,52 @@ export class Mo {
   protected readonly categories = computed(() => [
     ...new Set(this.entry()?.sans.map((sens) => sens.kategori) ?? []),
   ]);
+
+  /** The sections this word has, in page order: the menu on the left and the section titles. */
+  protected readonly sections = computed<readonly PageSection[]>(() => {
+    const entry = this.entry();
+    if (!entry) return [];
+    const related = entry.mo_ki_gen_rapo;
+    const count = (label: string, n: number) => (n > 1 ? `${label} yo` : label);
+    return [
+      { id: 'sans', label: count('Sans', entry.sans.length) },
+      ...(related?.sinonim?.length || related?.kontre?.length
+        ? [{ id: 'sinonim', label: 'Sinonim ak kontrè' }]
+        : []),
+      ...(entry.orijin ? [{ id: 'orijin', label: 'Orijin' }] : []),
+      ...(entry.ekspresyon?.length
+        ? [{ id: 'ekspresyon', label: count('Ekspresyon', entry.ekspresyon.length) }]
+        : []),
+      ...(related?.gade_tou?.length ? [{ id: 'gade-tou', label: 'Gade tou' }] : []),
+      { id: 'feyte', label: 'Feyte diksyonè a' },
+    ];
+  });
+
+  private readonly document = inject(DOCUMENT);
+
+  /** A link to a section of this page that also works before the page script has loaded. */
+  protected sectionHref(id: string): string {
+    return `/mo/${encodeURIComponent(this.entry()?.id ?? this.id())}#${id}`;
+  }
+
+  /** Scrolls smoothly to a section of the word card and puts it in the address bar. */
+  protected jump(event: Event, id: string): void {
+    const target = this.document.getElementById(id);
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    this.document.defaultView?.history.replaceState(null, '', this.sectionHref(id));
+  }
+
+  /** The title of a section, the same as in the menu. */
+  protected title(id: string): string {
+    return this.sections().find((section) => section.id === id)?.label ?? '';
+  }
+
+  /** Synonyms and antonyms link to their page when the dictionary has them. */
+  protected isEntry(word: string): boolean {
+    return findEntry(word) !== undefined;
+  }
 
   /** The words before and after this one, in dictionary order. */
   protected readonly neighbours = computed(() => {

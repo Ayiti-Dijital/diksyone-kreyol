@@ -19,10 +19,14 @@
    }
   ],
   "mo_ki_gen_rapo": {
+   "sinonim": [
+    "batiman"
+   ],
    "gade_tou": [
     "dlo"
    ]
   },
+  "orijin": "Soti nan fransè «bateau».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -53,10 +57,14 @@
    }
   ],
   "mo_ki_gen_rapo": {
+   "sinonim": [
+    "tibebe"
+   ],
    "gade_tou": [
     "manman"
    ]
   },
+  "orijin": "Soti nan fransè «bébé».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -87,10 +95,14 @@
    }
   ],
   "mo_ki_gen_rapo": {
+   "sinonim": [
+    "batiman"
+   ],
    "gade_tou": [
     "kay"
    ]
   },
+  "orijin": "Soti nan anglè «building».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -126,6 +138,7 @@
     "pen"
    ]
   },
+  "orijin": "Soti nan fransè «bonbon»; an Kreyòl li vle di yon ti gato sèk.",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -159,6 +172,13 @@
     "vant"
    ]
   },
+  "ekspresyon": [
+   {
+    "ekspresyon": "fèmen bouch ou",
+    "sans": "Pa pale ankò; rete an silans."
+   }
+  ],
+  "orijin": "Soti nan fransè «bouche».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -188,10 +208,14 @@
    }
   ],
   "mo_ki_gen_rapo": {
+   "sinonim": [
+    "mimi"
+   ],
    "gade_tou": [
     "chen"
    ]
   },
+  "orijin": "Soti nan fransè «chat».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -226,6 +250,13 @@
     "pòt"
    ]
   },
+  "ekspresyon": [
+   {
+    "ekspresyon": "Chen grangou pa jwe.",
+    "sans": "Pwovèb: lè yon moun nan nesesite, li pa gen tan pou amizman."
+   }
+  ],
+  "orijin": "Soti nan fransè «chien».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -260,6 +291,13 @@
     "jaden"
    ]
   },
+  "ekspresyon": [
+   {
+    "ekspresyon": "diri kole",
+    "sans": "Diri yo kwit ansanm ak pwa nan menm chodyè a."
+   }
+  ],
+  "orijin": "Soti nan fransè «du riz»: atik la kole ak mo a.",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -293,6 +331,13 @@
     "bato"
    ]
   },
+  "ekspresyon": [
+   {
+    "ekspresyon": "dlo nan je",
+    "sans": "Dlo ki koule nan je yon moun lè l ap kriye."
+   }
+  ],
+  "orijin": "Soti nan fransè «de l'eau»: plizyè mo vin tounen yon sèl.",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -328,6 +373,7 @@
     "manman"
    ]
   },
+  "orijin": "Soti nan fransè «famille».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -364,10 +410,20 @@
    }
   ],
   "mo_ki_gen_rapo": {
+   "sinonim": [
+    "selebrasyon"
+   ],
    "gade_tou": [
     "gato"
    ]
   },
+  "ekspresyon": [
+   {
+    "ekspresyon": "Bòn fèt!",
+    "sans": "Sa ou di yon moun jou anivèsè li oswa jou yon fèt."
+   }
+  ],
+  "orijin": "Soti nan fransè «fête».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -403,6 +459,7 @@
     "bonbon"
    ]
   },
+  "orijin": "Soti nan fransè «gâteau».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -431,6 +488,7 @@
     ]
    }
   ],
+  "orijin": "Soti nan fransè «hache».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -465,6 +523,7 @@
     "diri"
    ]
   },
+  "orijin": "Soti nan fransè «jardin».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -533,6 +592,13 @@
     "zanmi"
    ]
   },
+  "ekspresyon": [
+   {
+    "ekspresyon": "Men anpil chay pa lou.",
+    "sans": "Pwovèb: lè anpil moun mete ansanm, travay la vin fasil."
+   }
+  ],
+  "orijin": "Petèt soti nan panyòl «convite» (envitasyon pou travay ansanm).",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -567,6 +633,13 @@
     "solèy"
    ]
   },
+  "ekspresyon": [
+   {
+    "ekspresyon": "lalin plen",
+    "sans": "Lè tout lalin nan klere epi li fè yon boul won nèt."
+   }
+  ],
+  "orijin": "Soti nan fransè «la lune»: atik la kole ak mo a.",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -608,6 +681,7 @@
     "moun"
    ]
   },
+  "orijin": "Soti nan fransè «marché» (non) ak «marcher» (vèb).",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -643,6 +717,7 @@
     "fanmi"
    ]
   },
+  "orijin": "Soti nan fransè «maman».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -672,11 +747,21 @@
    }
   ],
   "mo_ki_gen_rapo": {
+   "sinonim": [
+    "kretyen"
+   ],
    "gade_tou": [
     "mache",
     "zanmi"
    ]
   },
+  "ekspresyon": [
+   {
+    "ekspresyon": "Tout moun se moun.",
+    "sans": "Pwovèb: chak moun merite respè, kèlkeswa sa li ye."
+   }
+  ],
+  "orijin": "Soti nan fransè «monde».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -710,6 +795,7 @@
     "yo"
    ]
   },
+  "orijin": "Soti nan fransè «nous».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -745,6 +831,13 @@
     "fanmi"
    ]
   },
+  "ekspresyon": [
+   {
+    "ekspresyon": "Papa Bondye",
+    "sans": "Fason moun rele Bondye, tankou yon papa."
+   }
+  ],
+  "orijin": "Soti nan fransè «papa».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -779,6 +872,7 @@
     "gato"
    ]
   },
+  "orijin": "Soti nan fransè «pain».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -812,6 +906,7 @@
     "kay"
    ]
   },
+  "orijin": "Soti nan fransè «porte».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -846,6 +941,7 @@
     "papa"
    ]
   },
+  "orijin": "Soti nan fransè «radio».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -880,6 +976,17 @@
     "lalin"
    ]
   },
+  "ekspresyon": [
+   {
+    "ekspresyon": "solèy leve",
+    "sans": "Lè solèy la parèt nan maten."
+   },
+   {
+    "ekspresyon": "solèy kouche",
+    "sans": "Lè solèy la ap disparèt nan aswè."
+   }
+  ],
+  "orijin": "Soti nan fransè «soleil».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -913,6 +1020,7 @@
     "kay"
    ]
   },
+  "orijin": "Soti nan fransè «table».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -941,6 +1049,7 @@
     ]
    }
   ],
+  "orijin": "Soti nan fransè «huit».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -974,6 +1083,7 @@
     "bouch"
    ]
   },
+  "orijin": "Soti nan fransè «ventre».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -1002,6 +1112,18 @@
     ]
    }
   ],
+  "mo_ki_gen_rapo": {
+   "sinonim": [
+    "chemen"
+   ]
+  },
+  "ekspresyon": [
+   {
+    "ekspresyon": "Bon wout!",
+    "sans": "Sa ou di yon moun k ap pati pou vwayaj li pase byen."
+   }
+  ],
+  "orijin": "Soti nan fransè «route».",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -1065,10 +1187,14 @@
    }
   ],
   "mo_ki_gen_rapo": {
+   "kontre": [
+    "lènmi"
+   ],
    "gade_tou": [
     "fanmi"
    ]
   },
+  "orijin": "Soti nan fransè «les amis»: son «z» atik la kole ak mo a.",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"
@@ -1102,6 +1228,7 @@
     "chen"
    ]
   },
+  "orijin": "Soti nan fransè «les os»: son «z» atik la kole ak mo a.",
   "sous": {
    "ekri_pa": "Ayiti Dijital",
    "baze_sou": "bouyon"

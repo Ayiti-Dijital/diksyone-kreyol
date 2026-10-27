@@ -45,6 +45,18 @@ for (const dir of readdirSync(ENTRIES, { withFileTypes: true })) {
       if (!sens.definisyon) fail('a meaning has no "definisyon"');
       if (!sens.egzanp?.length || sens.egzanp.length > 2) fail('each meaning needs 1 or 2 examples');
     }
+    for (const key of ['sinonim', 'kontre', 'gade_tou']) {
+      const words = entry.mo_ki_gen_rapo?.[key];
+      if (words !== undefined && (!Array.isArray(words) || words.some((w) => typeof w !== 'string' || !w))) {
+        fail(`"mo_ki_gen_rapo.${key}" must be a list of words`);
+      }
+    }
+    for (const item of entry.ekspresyon ?? []) {
+      if (!item.ekspresyon || !item.sans) fail('each expression needs "ekspresyon" and "sans"');
+    }
+    if (entry.orijin !== undefined && (typeof entry.orijin !== 'string' || !entry.orijin)) {
+      fail('"orijin" must be a sentence');
+    }
     if (!entry.sous?.ekri_pa) fail('"sous.ekri_pa" is missing');
     if (!STATUSES.has(entry.estati?.nivo)) fail(`unknown status "${entry.estati?.nivo}"`);
     entries.push(entry);

@@ -17,11 +17,21 @@
     }
   ],
   "mo_ki_gen_rapo": {
+    "sinonim": [
+      "kretyen"
+    ],
     "gade_tou": [
       "mache",
       "zanmi"
     ]
   },
+  "ekspresyon": [
+    {
+      "ekspresyon": "Tout moun se moun.",
+      "sans": "Pwovèb: chak moun merite respè, kèlkeswa sa li ye."
+    }
+  ],
+  "orijin": "Soti nan fransè «monde».",
   "sous": {
     "ekri_pa": "Ayiti Dijital",
     "baze_sou": "bouyon"

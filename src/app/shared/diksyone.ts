@@ -17,7 +17,15 @@ export interface Entry {
   /** The alphabet letter or letter group this word is the sound example for. */
   readonly let_alfabe?: string;
   readonly sans: readonly Sense[];
-  readonly mo_ki_gen_rapo?: { readonly gade_tou?: readonly string[] };
+  readonly mo_ki_gen_rapo?: {
+    readonly sinonim?: readonly string[];
+    readonly kontre?: readonly string[];
+    readonly gade_tou?: readonly string[];
+  };
+  /** Fixed expressions and proverbs with this word, each with its meaning. */
+  readonly ekspresyon?: readonly { readonly ekspresyon: string; readonly sans: string }[];
+  /** Where the word comes from, in one sentence. */
+  readonly orijin?: string;
   readonly sous: { readonly ekri_pa: string; readonly baze_sou?: string };
   readonly estati: { readonly nivo: 'bouyon' | 'revize' | 'valide'; readonly dat: string };
 }
