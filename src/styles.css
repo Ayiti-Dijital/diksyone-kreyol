@@ -14,6 +14,11 @@
   --color-ink: #161c3b;
   --color-ink-soft: #4a5170;
   --color-paper: #fcfaf5;
+  --color-text: #33384d;
+  --color-muted: #6b7088;
+  --color-link: #2f4596;
+  --color-mist: #f4f5fa;
+  --color-line: #e3e5ee;
   --font-sans:
     ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
@@ -22,15 +27,15 @@
 
 @layer base {
   html {
-    background-color: var(--color-navy-deep);
-    color: var(--color-ink);
+    background-color: var(--color-mist);
+    color: var(--color-text);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
   }
 
   body {
-    background-color: var(--color-paper);
+    background-color: #fff;
   }
 
   :focus-visible {

@@ -1,0 +1,20 @@
+<nav aria-label="Kote ou ye" class="border-b border-line bg-mist">
+  <ol
+    class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-2 gap-y-1 px-4 py-2.5 text-sm text-muted sm:px-6"
+  >
+    @for (item of items(); track item.label; let last = $last) {
+      <li class="flex items-center gap-2">
+        @if (item.link && !last) {
+          <a [routerLink]="item.link" class="inline-block py-0.5 text-link hover:underline">{{
+            item.label
+          }}</a>
+        } @else {
+          <span [attr.aria-current]="last ? 'page' : null">{{ item.label }}</span>
+        }
+        @if (!last) {
+          <span aria-hidden="true">›</span>
+        }
+      </li>
+    }
+  </ol>
+</nav>

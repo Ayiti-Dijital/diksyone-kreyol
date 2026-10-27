@@ -1,21 +1,17 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 import { EnfomasyonLegal } from './enfomasyon-legal';
 
 describe('EnfomasyonLegal', () => {
-  let component: EnfomasyonLegal;
-  let fixture: ComponentFixture<EnfomasyonLegal>;
-
-  beforeEach(async () => {
+  it('renders one main title and the breadcrumb', async () => {
     await TestBed.configureTestingModule({
       imports: [EnfomasyonLegal],
+      providers: [provideRouter([])],
     }).compileComponents();
-
-    fixture = TestBed.createComponent(EnfomasyonLegal);
-    component = fixture.componentInstance;
+    const fixture = TestBed.createComponent(EnfomasyonLegal);
     await fixture.whenStable();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
+    const page = fixture.nativeElement as HTMLElement;
+    expect(page.querySelectorAll('h1').length).toBe(1);
+    expect(page.querySelector('nav[aria-label="Kote ou ye"]')).toBeTruthy();
   });
 });

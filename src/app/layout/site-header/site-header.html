@@ -1,35 +1,66 @@
-<header class="bg-navy-deep text-sand">
-  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-    <a
-      routerLink="/"
-      class="flex items-center gap-3 rounded-lg"
-      aria-label="Diksyonè Kreyòl – paj dakèy"
+<header>
+  <div class="bg-navy-deep text-periwinkle">
+    <div
+      class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-1 text-xs sm:px-6"
     >
-      <img src="brand/mark-dark.svg" alt="" width="40" height="40" class="size-10" />
-      <span class="leading-tight">
-        <span class="block font-serif text-xl font-semibold">Diksyonè Kreyòl</span>
-        <span class="block font-mono text-[0.7rem] tracking-[0.18em] text-periwinkle uppercase">
-          pa Ayiti Dijital
-        </span>
-      </span>
-    </a>
-    <nav aria-label="Navigasyon prensipal" class="flex items-center gap-1 sm:gap-2">
-      <a
-        routerLink="/"
-        fragment="mo-jou-a"
-        class="hidden rounded-lg px-3 py-2 text-sm text-periwinkle hover:text-sand sm:block"
-        >Mo jou a</a
-      >
-      <a
-        routerLink="/"
-        fragment="ede-nou"
-        class="hidden rounded-lg px-3 py-2 text-sm text-periwinkle hover:text-sand sm:block"
-        >Ede nou</a
+      <a [href]="mainSiteUrl" class="inline-block py-1.5 hover:text-sand"
+        >Yon pwojè Ayiti Dijital</a
       >
       <span
-        class="ml-1 rounded-full border border-gold/50 px-3 py-1 font-mono text-xs tracking-wider text-gold uppercase"
+        class="rounded-full border border-gold/50 px-2.5 py-0.5 font-mono tracking-wider text-gold uppercase"
         >Byento</span
       >
-    </nav>
+    </div>
+  </div>
+
+  <div class="border-b border-line bg-white">
+    <div class="mx-auto flex max-w-6xl flex-col items-center px-4 pt-5 sm:px-6">
+      <a
+        routerLink="/"
+        class="flex items-center gap-3 rounded"
+        aria-label="Diksyonè Kreyòl – paj dakèy"
+      >
+        <img src="brand/mark-light.svg" alt="" width="36" height="36" class="size-8 sm:size-9" />
+        <span class="text-xl font-light tracking-[0.2em] text-navy uppercase sm:text-3xl"
+          >Diksyonè Kreyòl</span
+        >
+      </a>
+      <nav aria-label="Navigasyon prensipal" class="mt-2">
+        <ul
+          class="flex flex-wrap justify-center text-[0.8rem] font-medium tracking-wider uppercase"
+        >
+          <li>
+            <a
+              routerLink="/"
+              routerLinkActive="!text-red"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ariaCurrentWhenActive="page"
+              class="inline-block px-3 py-2 text-muted hover:text-link"
+              >Diksyonè</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/jwet"
+              routerLinkActive="!text-red"
+              ariaCurrentWhenActive="page"
+              class="inline-block px-3 py-2 text-muted hover:text-link"
+              >Jwèt</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/"
+              fragment="ede-nou"
+              class="inline-block px-3 py-2 text-muted hover:text-link"
+              >Ede nou</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mx-auto max-w-3xl px-4 pt-2 pb-4 sm:px-6">
+      <dk-search-preview />
+    </div>
   </div>
 </header>

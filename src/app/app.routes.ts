@@ -7,6 +7,11 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/home/home').then((m) => m.Home),
   },
   {
+    path: 'jwet',
+    title: 'Jwèt Kreyòl – Diksyonè Kreyòl',
+    loadComponent: () => import('./pages/jwet/jwet').then((m) => m.Jwet),
+  },
+  {
     path: 'enfomasyon-legal',
     title: 'Enfòmasyon legal – Diksyonè Kreyòl',
     loadComponent: () =>
