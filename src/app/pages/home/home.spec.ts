@@ -42,8 +42,8 @@ describe('Home', () => {
   it('shows four tool tiles: the dictionary opens, the others are coming soon', () => {
     const tiles = [...page.querySelectorAll('section[aria-labelledby="zouti-tit"] li')];
     expect(tiles.length).toBe(4);
-    expect(tiles[0].querySelector('a[href="/let/a"]')?.textContent).toContain('Louvri diksyonè a');
-    expect(tiles[0].textContent).toContain('/kɔ̃bit/');
+    expect(tiles[0].querySelector('a[href="/let/a"]')?.textContent).toContain('Diksyonè Kreyòl');
+    expect(tiles[0].textContent).not.toContain('Byento');
     expect(tiles.slice(1).every((tile) => tile.textContent?.includes('Byento'))).toBe(true);
   });
 

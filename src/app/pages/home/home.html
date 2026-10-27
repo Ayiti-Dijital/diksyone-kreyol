@@ -3,13 +3,7 @@
 <div class="mx-auto max-w-6xl px-4 sm:px-6">
   <section class="card mt-2 p-6 sm:p-8" aria-labelledby="tit-paj">
     <div class="flex items-start gap-4 sm:gap-5">
-      <img
-        src="brand/mark-light.svg"
-        alt=""
-        width="56"
-        height="56"
-        class="size-12 shrink-0 sm:size-14"
-      />
+      <dk-icon name="az" class="size-12 shrink-0 text-link sm:size-14" />
       <div>
         <h1 id="tit-paj" class="text-2xl tracking-wide text-link uppercase sm:text-3xl">
           Diksyonè Kreyòl–Kreyòl
@@ -74,83 +68,54 @@
     </article>
   </section>
 
-  <!-- The dictionary's tools, each shown with a real sample of what it holds -->
-  <section class="mt-10" aria-labelledby="zouti-tit">
-    <dk-section-title icon="book" headingId="zouti-tit">Zouti diksyonè a</dk-section-title>
-    <ul
-      class="card grid divide-y divide-line sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x"
-    >
-      <li
-        class="group relative flex flex-col p-6 transition-colors hover:bg-paper sm:border-b sm:border-line lg:border-b-0 lg:p-7"
-      >
-        <p class="font-mono text-xs tracking-[0.16em] text-muted uppercase">
-          <span class="text-red">01</span> · Diksyonè Kreyòl
-        </p>
-        <p class="mt-7 font-serif text-5xl leading-none text-navy">
-          @for (part of sample.syllables; track $index; let first = $first) {
-            @if (!first) {
-              <span class="text-red">·</span>
-            }
-            <span>{{ part }}</span>
+  <section class="card mt-10 p-4 sm:p-6" aria-labelledby="zouti-tit">
+    <h2 id="zouti-tit" class="sr-only">Zouti diksyonè a</h2>
+    <ul class="grid gap-4 md:grid-cols-2">
+      @for (tile of tiles; track tile.title) {
+        <li class="relative min-h-52 overflow-hidden text-white" [class]="tile.color">
+          @if (tile.path) {
+            <a [routerLink]="tile.path" class="group block h-full p-6 pr-24 sm:p-8 sm:pr-28">
+              <ng-container *ngTemplateOutlet="content; context: { $implicit: tile }" />
+              <span
+                aria-hidden="true"
+                class="absolute right-0 bottom-0 grid size-24 place-items-center rounded-tl-[4rem] bg-white pt-3 pl-3 text-link transition-transform group-hover:translate-x-1"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  class="size-7"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 12h15M14 6l6 6-6 6" />
+                </svg>
+              </span>
+            </a>
+          } @else {
+            <div class="h-full p-6 pr-20 sm:p-8 sm:pr-24">
+              <ng-container *ngTemplateOutlet="content; context: { $implicit: tile }" />
+            </div>
+            <span
+              class="absolute top-6 -right-12 w-48 rotate-45 py-1 text-center text-xs font-bold tracking-widest uppercase shadow"
+              [class]="tile.ribbon"
+              >Byento</span
+            >
           }
-        </p>
-        <p class="mt-3 font-mono text-sm text-muted">
-          /{{ sample.phones }}/ · {{ sample.category }}
-        </p>
-        <p class="mt-6 flex-1 text-sm leading-relaxed text-ink-soft">
-          {{ entries.length }} mo, chak ak sans, egzanp ak pwononsyasyon an Kreyòl.
-        </p>
-        <a
-          routerLink="/let/a"
-          class="mt-6 text-sm font-semibold text-link after:absolute after:inset-0 group-hover:underline"
-          >Louvri diksyonè a →</a
-        >
-      </li>
-
-      <li
-        class="flex flex-col p-6 sm:border-b sm:border-l sm:border-line lg:border-b-0 lg:border-l-0 lg:p-7"
-      >
-        <p class="font-mono text-xs tracking-[0.16em] text-muted uppercase">
-          <span class="text-red">02</span> · Sinonim ak kontrè
-        </p>
-        <p class="mt-7 font-serif text-4xl leading-none text-navy">zanmi</p>
-        <p class="mt-2 font-serif text-4xl leading-none text-navy/45">
-          <span class="text-2xl text-red">≠</span> lènmi
-        </p>
-        <p class="mt-6 flex-1 text-sm leading-relaxed text-ink-soft">
-          {{ synonyms }} sinonim ak {{ antonyms }} kontrè pou kounye a. Lis la ap grandi ak chak mo.
-        </p>
-        <p class="mt-6 font-mono text-xs tracking-[0.16em] text-gold-deep uppercase">Byento</p>
-      </li>
-
-      <li class="flex flex-col p-6 lg:p-7">
-        <p class="font-mono text-xs tracking-[0.16em] text-muted uppercase">
-          <span class="text-red">03</span> · Gramè Kreyòl
-        </p>
-        <p class="mt-7 font-serif text-4xl leading-none text-navy">
-          m <span class="underline decoration-gold decoration-4 underline-offset-8">ap</span> manje
-        </p>
-        <p class="mt-4 text-xs text-muted">«ap»: mak pou yon aksyon k ap fèt kounye a</p>
-        <p class="mt-5 flex-1 text-sm leading-relaxed text-ink-soft">
-          Detèminan, mak tan ak aspè, fraz: gramè Kreyòl la, esplike senp.
-        </p>
-        <p class="mt-6 font-mono text-xs tracking-[0.16em] text-gold-deep uppercase">Byento</p>
-      </li>
-
-      <li class="flex flex-col p-6 sm:border-l sm:border-line lg:border-l-0 lg:p-7">
-        <p class="font-mono text-xs tracking-[0.16em] text-muted uppercase">
-          <span class="text-red">04</span> · Diksyonè pou lekòl
-        </p>
-        <p class="mt-7 font-serif text-4xl leading-none tracking-wide text-navy">
-          a <span class="text-red">an</span> b <span class="text-red">ch</span>
-        </p>
-        <p class="mt-4 text-xs text-muted">Premye lèt alfabè a, pou aprann li</p>
-        <p class="mt-5 flex-1 text-sm leading-relaxed text-ink-soft">
-          Diksyonè pou timoun 7–10 an ak 10–15 an.
-        </p>
-        <p class="mt-6 font-mono text-xs tracking-[0.16em] text-gold-deep uppercase">Byento</p>
-      </li>
+        </li>
+      }
     </ul>
+    <ng-template #content let-tile>
+      @if (tile.path) {
+        <dk-icon [name]="tile.icon" class="absolute top-6 right-6 size-12 opacity-80" />
+      }
+      <h3 class="max-w-[17rem] text-2xl leading-tight font-extrabold tracking-wide uppercase">
+        {{ tile.title }}
+      </h3>
+      <span aria-hidden="true" class="mt-4 block h-px w-3/4 bg-white/70"></span>
+      <p class="mt-4 max-w-xs font-semibold">{{ tile.text }}</p>
+    </ng-template>
   </section>
 
   <div class="grid gap-10 py-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
