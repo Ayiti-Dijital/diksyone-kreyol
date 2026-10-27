@@ -18,7 +18,7 @@ describe('Mo', () => {
     const page = await render('fèt');
     expect(page.querySelector('h1')?.textContent).toContain('fèt');
     expect(page.textContent).toContain('/fɛt/');
-    expect(page.querySelectorAll('section[aria-labelledby="sans-tit"] ol li').length).toBe(2);
+    expect(page.querySelectorAll('article ol li').length).toBe(2);
     expect(page.textContent).toContain('«Li fèt Okap.»');
     expect(page.textContent).toContain('bouyon');
     expect(page.querySelector('a[href="/let/%C3%A8"]')).toBeTruthy();
@@ -27,9 +27,9 @@ describe('Mo', () => {
 
   it('shows the syllables of the word', async () => {
     const page = await render('konbit');
-    expect(
-      page.querySelector('section[aria-labelledby="ekriti-tit"] dd')?.textContent?.trim(),
-    ).toBe('kon|bit');
+    expect(page.querySelector('article strong[aria-label="kon, bit"]')?.textContent?.trim()).toBe(
+      'kon|bit',
+    );
   });
 
   it('links related words and the neighbours in dictionary order', async () => {
