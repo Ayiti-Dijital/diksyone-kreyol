@@ -1,0 +1,30 @@
+{
+  "id": "yo",
+  "mo": "yo",
+  "varyant": [],
+  "pwononsyasyon": "j o",
+  "let_alfabe": "y",
+  "sans": [
+    {
+      "kategori": "pwonon",
+      "definisyon": "Plizyè moun oswa bagay ou pa ladan yo. Apre yon non, li di gen plizyè.",
+      "egzanp": [
+        "Timoun yo ap jwe nan lakou a."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "nou"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "solèy",
+  "mo": "solèy",
+  "varyant": [],
+  "pwononsyasyon": "s o l ɛ j",
+  "let_alfabe": "s",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Gwo zetwal ki bay tè a limyè ak chalè lajounen.",
+      "egzanp": [
+        "Solèy la cho anpil a midi."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "lalin"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

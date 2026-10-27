@@ -1,0 +1,30 @@
+{
+  "id": "konbit",
+  "mo": "konbit",
+  "varyant": [],
+  "pwononsyasyon": "k ɔ̃ b i t",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Travay ansanm: vwazen ak zanmi vin ede yon moun fè yon gwo travay, tankou travay jaden, san yo pa peye yo. Moun ki resevwa èd la bay manje.",
+      "egzanp": [
+        "Tout katye a te vin nan konbit la pou plante pwa."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "jaden",
+      "zanmi"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

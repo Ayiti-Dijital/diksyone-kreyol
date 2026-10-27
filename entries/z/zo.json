@@ -1,0 +1,30 @@
+{
+  "id": "zo",
+  "mo": "zo",
+  "varyant": [],
+  "pwononsyasyon": "z o",
+  "let_alfabe": "o",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Pati di ki fòme kò moun ak bèt, anndan vyann nan.",
+      "egzanp": [
+        "Chen an ap ronje yon zo."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "chen"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

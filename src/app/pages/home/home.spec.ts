@@ -26,8 +26,14 @@ describe('Home', () => {
     expect(current?.textContent).toContain('Diksyonè Kreyòl–Kreyòl');
   });
 
-  it('lists the 32 letters and letter groups of the alphabet', () => {
-    expect(page.querySelectorAll('ul[aria-labelledby="alfabe"] li').length).toBe(32);
+  it('links the 32 letters and letter groups of the alphabet', () => {
+    const letters = page.querySelectorAll<HTMLAnchorElement>('#alfabe-seksyon a');
+    expect(letters.length).toBe(32);
+    expect(decodeURIComponent(letters[1].getAttribute('href') ?? '')).toBe('/let/an');
+  });
+
+  it('lists every word of the dictionary', () => {
+    expect(page.querySelectorAll('section[aria-labelledby="tout-mo-tit"] li').length).toBe(33);
   });
 
   it('shows the word of the day as a marked draft', () => {

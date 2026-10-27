@@ -3,7 +3,8 @@
 **Yon diksyonè Kreyòl–Kreyòl gratis e louvri sou entènèt** – chak mo Kreyòl, esplike an Kreyòl, ak
 definisyon, egzanp ak pwononsyasyon. Yon pwojè [Ayiti Dijital](https://ayitidijital.org).
 
-**Adrès:** https://diksyone.ayitidijital.org · **Estati:** byento – paj dakèy la sèlman pou kounye a.
+**Adrès:** https://diksyone.ayitidijital.org · **Estati:** 33 premye mo yo la, tout se bouyon (yon moun ki pale
+Kreyòl kòm lang manman l poko tcheke yo).
 
 ## Ede nou
 
@@ -18,6 +19,12 @@ Ekri nou: kontakt@ayitidijital.org
 **Règ pou kontni an:** se sèlman sa nou ekri nou menm. Pa janm kopye lòt diksyonè (liv oswa sit
 entènèt).
 
+## Mo yo
+
+Chak mo se yon fichye: `entries/<lèt>/<mo>.json` (egzanp: `entries/c/chat.json`). Pwononsyasyon an soti nan règ son
+TTS Ayiti Dijital la ([haitian-creole-tts](https://github.com/Ayiti-Dijital/haitian-creole-tts)). Anvan chak build,
+`tools/build-index.mjs` tcheke tout fichye yo.
+
 ## Lisans
 
 - **Done ak tèks diksyonè a:** CC BY-NC-SA 4.0 – gade [`LICENSE-DATA.md`](LICENSE-DATA.md)
@@ -27,8 +34,9 @@ entènèt).
 
 ## English
 
-An open, free **Kreyòl–Kreyòl (monolingual Haitian Creole) dictionary** by Ayiti Dijital. Right now this
-repository holds the landing page; the dictionary data and the search follow.
+An open, free **Kreyòl–Kreyòl (monolingual Haitian Creole) dictionary** by Ayiti Dijital. Each word is one JSON
+file in `entries/`; `pnpm build` checks them all (`tools/build-index.mjs`) and prerenders one page per word and
+per letter. The first 33 words are drafts (`bouyon`) waiting for a native-speaker review.
 
 ### Run it
 

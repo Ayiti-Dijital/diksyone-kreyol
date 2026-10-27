@@ -1,0 +1,30 @@
+{
+  "id": "pòt",
+  "mo": "pòt",
+  "varyant": [],
+  "pwononsyasyon": "p ɔ t",
+  "let_alfabe": "ò",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Pati yon kay oswa yon machin ou louvri pou antre oswa soti.",
+      "egzanp": [
+        "Fèmen pòt la lè w ap soti."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "kay"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

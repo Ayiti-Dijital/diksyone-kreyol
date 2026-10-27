@@ -1,0 +1,30 @@
+{
+  "id": "zanmi",
+  "mo": "zanmi",
+  "varyant": [],
+  "pwononsyasyon": "z ã m i",
+  "let_alfabe": "z",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Yon moun ou renmen epi ou fè konfyans, ki pa fanmi w.",
+      "egzanp": [
+        "Zanmi m vin ede m fè devwa."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "fanmi"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

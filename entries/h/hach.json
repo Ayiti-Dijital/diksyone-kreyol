@@ -1,0 +1,25 @@
+{
+  "id": "hach",
+  "mo": "hach",
+  "varyant": [],
+  "pwononsyasyon": "h a ʃ",
+  "let_alfabe": "h",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Yon zouti ki gen yon lam fè byen file sou yon manch bwa, pou koupe bwa.",
+      "egzanp": [
+        "Li pran hach la pou l fann bwa."
+      ]
+    }
+  ],
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

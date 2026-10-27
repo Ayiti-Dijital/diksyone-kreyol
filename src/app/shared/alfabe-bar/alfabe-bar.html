@@ -1,0 +1,23 @@
+<nav aria-label="Alfabè Kreyòl la: 32 lèt ak gwoup lèt" class="card">
+  <ul
+    class="flex flex-wrap justify-center px-1 py-1 text-sm font-semibold uppercase lg:justify-between lg:px-3"
+  >
+    @for (letter of alfabe; track letter) {
+      <li>
+        <a
+          [routerLink]="['/let', letter]"
+          class="grid min-h-9 min-w-8 place-items-center rounded px-1 hover:bg-mist"
+          [class]="
+            letter === current()
+              ? 'bg-link !text-white hover:bg-link'
+              : letter.length > 1
+                ? 'text-red'
+                : 'text-link'
+          "
+          [attr.aria-current]="letter === current() ? 'page' : null"
+          >{{ letter }}</a
+        >
+      </li>
+    }
+  </ul>
+</nav>

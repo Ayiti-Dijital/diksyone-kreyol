@@ -1,9 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Router, provideRouter } from '@angular/router';
 import { SearchPreview } from './search-preview';
 
 describe('SearchPreview', () => {
   let fixture: ComponentFixture<SearchPreview>;
   let page: HTMLElement;
+  let router: Router;
 
   async function search(text: string): Promise<void> {
     const input = page.querySelector<HTMLInputElement>('input#mo')!;
@@ -14,9 +16,13 @@ describe('SearchPreview', () => {
   }
 
   beforeEach(async () => {
-    await TestBed.configureTestingModule({ imports: [SearchPreview] }).compileComponents();
+    await TestBed.configureTestingModule({
+      imports: [SearchPreview],
+      providers: [provideRouter([{ path: '**', children: [] }])],
+    }).compileComponents();
     fixture = TestBed.createComponent(SearchPreview);
     page = fixture.nativeElement as HTMLElement;
+    router = TestBed.inject(Router);
     await fixture.whenStable();
   });
 
@@ -29,11 +35,21 @@ describe('SearchPreview', () => {
     expect(page.textContent).toContain('Ekri yon mo anvan ou chèche.');
   });
 
-  it('says the dictionary is not ready and offers to propose the word', async () => {
-    await search('  konbit ');
-    expect(page.textContent).toContain('Diksyonè a poko pare');
-    expect(page.querySelector('strong')?.textContent).toContain('«konbit»');
+  it('opens the page of a word typed without its accent', async () => {
+    await search('  Fet ');
+    expect(decodeURIComponent(router.url)).toBe('/mo/fèt');
+  });
+
+  it('lists the words that start with the text', async () => {
+    await search('ba');
+    const links = [...page.querySelectorAll('[aria-live] a')].map((a) => a.textContent?.trim());
+    expect(links).toEqual(['bato']);
+  });
+
+  it('offers to propose a word the dictionary does not have', async () => {
+    await search('lekol');
+    expect(page.textContent).toContain('Nou poko gen mo');
     const link = page.querySelector<HTMLAnchorElement>('a[href^="mailto:"]')!;
-    expect(decodeURIComponent(link.href)).toContain('pwopoze mo: konbit');
+    expect(decodeURIComponent(link.href)).toContain('pwopoze mo: lekol');
   });
 });

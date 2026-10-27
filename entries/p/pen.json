@@ -1,0 +1,31 @@
+{
+  "id": "pen",
+  "mo": "pen",
+  "varyant": [],
+  "pwononsyasyon": "p ɛ̃",
+  "let_alfabe": "p",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Manje yo fè ak farin, dlo ak leven, epi yo kwit nan fou.",
+      "egzanp": [
+        "Nou manje pen ak manba chak maten."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "bonbon",
+      "gato"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

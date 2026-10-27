@@ -1,0 +1,30 @@
+{
+  "id": "bouch",
+  "mo": "bouch",
+  "varyant": [],
+  "pwononsyasyon": "b u ʃ",
+  "let_alfabe": "ou",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Pati nan figi a ki pèmèt nou manje, bwè ak pale.",
+      "egzanp": [
+        "Louvri bouch ou pou doktè a gade."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "vant"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "nou",
+  "mo": "nou",
+  "varyant": [],
+  "pwononsyasyon": "n u",
+  "let_alfabe": "n",
+  "sans": [
+    {
+      "kategori": "pwonon",
+      "definisyon": "Moun k ap pale a ansanm ak lòt moun. Li ka vle di tou plizyè moun w ap pale avè yo.",
+      "egzanp": [
+        "Nou renmen jwe foutbòl."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "yo"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

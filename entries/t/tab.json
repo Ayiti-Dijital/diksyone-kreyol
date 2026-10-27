@@ -1,0 +1,30 @@
+{
+  "id": "tab",
+  "mo": "tab",
+  "varyant": [],
+  "pwononsyasyon": "t a b",
+  "let_alfabe": "t",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Yon mèb ki gen yon sifas plat sou pye, pou manje, ekri oswa travay.",
+      "egzanp": [
+        "Mete asyèt yo sou tab la."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "kay"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

@@ -1,0 +1,1000 @@
+[
+ {
+  "id": "bato",
+  "mo": "bato",
+  "varyant": [],
+  "pwononsyasyon": "b a t o",
+  "let_alfabe": "b",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon gwo bagay ki flote sou dlo epi ki pote moun oswa machandiz sou lanmè oswa sou rivyè.",
+    "egzanp": [
+     "Bato a kite pò a bonè maten an."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "dlo"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "bebe",
+  "mo": "bebe",
+  "varyant": [],
+  "pwononsyasyon": "b e b e",
+  "let_alfabe": "e",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon timoun ki fèk fèt, ki poko ka mache ni pale.",
+    "egzanp": [
+     "Bebe a ap dòmi nan bra manman l."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "manman"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "bilding",
+  "mo": "bilding",
+  "varyant": [],
+  "pwononsyasyon": "b i l d i ŋ",
+  "let_alfabe": "ng",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon gwo batiman ki gen plizyè etaj.",
+    "egzanp": [
+     "Biwo a nan yon gwo bilding lavil."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "kay"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "bonbon",
+  "mo": "bonbon",
+  "varyant": [],
+  "pwononsyasyon": "b ɔ̃ b ɔ̃",
+  "let_alfabe": "on",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Ti manje dous oswa sale yo fè ak farin epi yo kwit nan fou.",
+    "egzanp": [
+     "Li bay chak timoun de bonbon."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "gato",
+    "pen"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "bouch",
+  "mo": "bouch",
+  "varyant": [],
+  "pwononsyasyon": "b u ʃ",
+  "let_alfabe": "ou",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Pati nan figi a ki pèmèt nou manje, bwè ak pale.",
+    "egzanp": [
+     "Louvri bouch ou pou doktè a gade."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "vant"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "chat",
+  "mo": "chat",
+  "varyant": [],
+  "pwononsyasyon": "ʃ a t",
+  "let_alfabe": "ch",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon ti bèt kay ki gen pwal, ki fè «myaw» epi ki kenbe sourit.",
+    "egzanp": [
+     "Chat la ap dòmi sou chèz la."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "chen"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "chen",
+  "mo": "chen",
+  "varyant": [],
+  "pwononsyasyon": "ʃ ɛ̃",
+  "let_alfabe": "en",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon bèt kay ki jape, ki veye kay la epi ki zanmi moun.",
+    "egzanp": [
+     "Chen an jape lè yon moun frape pòt la."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "chat",
+    "pòt"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "diri",
+  "mo": "diri",
+  "varyant": [],
+  "pwononsyasyon": "d i ɣ i",
+  "let_alfabe": "i",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Ti grenn yo kwit pou manje. Se youn nan manje prensipal ann Ayiti.",
+    "egzanp": [
+     "Diri ak pwa se yon plat nou renmen anpil."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "jaden"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "dlo",
+  "mo": "dlo",
+  "varyant": [],
+  "pwononsyasyon": "d l o",
+  "let_alfabe": "d",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Likid san koulè ki tonbe lè lapli tonbe epi ki nan rivyè ak lanmè. Moun ak bèt bwè l pou yo viv.",
+    "egzanp": [
+     "Bay timoun yo yon vè dlo."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "bato"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "fanmi",
+  "mo": "fanmi",
+  "varyant": [],
+  "pwononsyasyon": "f ã m i",
+  "let_alfabe": "f",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Moun ki gen menm san oswa ki viv ansanm: papa, manman, pitit, frè, sè ak lòt paran.",
+    "egzanp": [
+     "Tout fanmi an reyini pou Nwèl."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "papa",
+    "manman"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "fèt",
+  "mo": "fèt",
+  "varyant": [],
+  "pwononsyasyon": "f ɛ t",
+  "let_alfabe": "è",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon moman kote moun reyini pou yo selebre, manje, chante ak danse.",
+    "egzanp": [
+     "Nou fè yon ti fèt pou anivèsè Mari."
+    ]
+   },
+   {
+    "kategori": "vèb",
+    "definisyon": "Soti nan vant manman w, vin sou tè a.",
+    "egzanp": [
+     "Li fèt Okap."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "gato"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "gato",
+  "mo": "gato",
+  "varyant": [],
+  "pwononsyasyon": "ɡ a t o",
+  "let_alfabe": "g",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon manje dous yo fè ak farin, ze ak sik, epi yo kwit nan fou.",
+    "egzanp": [
+     "Nou koupe gato a pou fèt la."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "fèt",
+    "bonbon"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "hach",
+  "mo": "hach",
+  "varyant": [],
+  "pwononsyasyon": "h a ʃ",
+  "let_alfabe": "h",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon zouti ki gen yon lam fè byen file sou yon manch bwa, pou koupe bwa.",
+    "egzanp": [
+     "Li pran hach la pou l fann bwa."
+    ]
+   }
+  ],
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "jaden",
+  "mo": "jaden",
+  "varyant": [],
+  "pwononsyasyon": "ʒ a d ɛ̃",
+  "let_alfabe": "j",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon moso tè kote yo plante legim, pye bwa oswa flè.",
+    "egzanp": [
+     "Granmoun nan ap travay nan jaden an depi maten."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "diri"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "kay",
+  "mo": "kay",
+  "varyant": [],
+  "pwononsyasyon": "k a j",
+  "let_alfabe": "k",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon batiman kote moun rete, dòmi epi viv ak fanmi yo.",
+    "egzanp": [
+     "Kay nou an gen twa chanm."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "pòt",
+    "tab"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "konbit",
+  "mo": "konbit",
+  "varyant": [],
+  "pwononsyasyon": "k ɔ̃ b i t",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Travay ansanm: vwazen ak zanmi vin ede yon moun fè yon gwo travay, tankou travay jaden, san yo pa peye yo. Moun ki resevwa èd la bay manje.",
+    "egzanp": [
+     "Tout katye a te vin nan konbit la pou plante pwa."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "jaden",
+    "zanmi"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "lalin",
+  "mo": "lalin",
+  "varyant": [],
+  "pwononsyasyon": "l a l i n",
+  "let_alfabe": "l",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Gwo boul ki klere nan syèl la lannwit epi ki vire toutotou tè a.",
+    "egzanp": [
+     "Lalin nan klere tout lakou a aswè a."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "solèy"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "mache",
+  "mo": "mache",
+  "varyant": [],
+  "pwononsyasyon": "m a ʃ e",
+  "let_alfabe": "m",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Kote moun al achte ak vann manje ak lòt bagay.",
+    "egzanp": [
+     "Manman m al nan mache a samdi."
+    ]
+   },
+   {
+    "kategori": "vèb",
+    "definisyon": "Deplase sou de pye.",
+    "egzanp": [
+     "Timoun yo mache al lekòl."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "moun"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "manman",
+  "mo": "manman",
+  "varyant": [],
+  "pwononsyasyon": "m ã m ã",
+  "let_alfabe": "an",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Fanm ki fè yon pitit, oswa ki elve l tankou pitit li.",
+    "egzanp": [
+     "Manman m fè diri ak pwa pou tout fanmi an."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "papa",
+    "fanmi"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "moun",
+  "mo": "moun",
+  "varyant": [],
+  "pwononsyasyon": "m u n",
+  "let_alfabe": "oun",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon nonm, yon fanm oswa yon timoun; yon èt imen.",
+    "egzanp": [
+     "Gen anpil moun nan mache a jodi a."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "mache",
+    "zanmi"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "nou",
+  "mo": "nou",
+  "varyant": [],
+  "pwononsyasyon": "n u",
+  "let_alfabe": "n",
+  "sans": [
+   {
+    "kategori": "pwonon",
+    "definisyon": "Moun k ap pale a ansanm ak lòt moun. Li ka vle di tou plizyè moun w ap pale avè yo.",
+    "egzanp": [
+     "Nou renmen jwe foutbòl."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "yo"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "papa",
+  "mo": "papa",
+  "varyant": [],
+  "pwononsyasyon": "p a p a",
+  "let_alfabe": "a",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Gason ki fè yon pitit. Papa ak manman se paran yon timoun.",
+    "egzanp": [
+     "Papa m ap travay lavil jodi a."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "manman",
+    "fanmi"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "pen",
+  "mo": "pen",
+  "varyant": [],
+  "pwononsyasyon": "p ɛ̃",
+  "let_alfabe": "p",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Manje yo fè ak farin, dlo ak leven, epi yo kwit nan fou.",
+    "egzanp": [
+     "Nou manje pen ak manba chak maten."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "bonbon",
+    "gato"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "pòt",
+  "mo": "pòt",
+  "varyant": [],
+  "pwononsyasyon": "p ɔ t",
+  "let_alfabe": "ò",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Pati yon kay oswa yon machin ou louvri pou antre oswa soti.",
+    "egzanp": [
+     "Fèmen pòt la lè w ap soti."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "kay"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "radyo",
+  "mo": "radyo",
+  "varyant": [],
+  "pwononsyasyon": "ɣ a d j o",
+  "let_alfabe": "r",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Aparèy ki resevwa son ki soti lwen, pou moun koute nouvèl ak mizik.",
+    "egzanp": [
+     "Papa m ap koute nouvèl nan radyo a."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "papa"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "solèy",
+  "mo": "solèy",
+  "varyant": [],
+  "pwononsyasyon": "s o l ɛ j",
+  "let_alfabe": "s",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Gwo zetwal ki bay tè a limyè ak chalè lajounen.",
+    "egzanp": [
+     "Solèy la cho anpil a midi."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "lalin"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "tab",
+  "mo": "tab",
+  "varyant": [],
+  "pwononsyasyon": "t a b",
+  "let_alfabe": "t",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon mèb ki gen yon sifas plat sou pye, pou manje, ekri oswa travay.",
+    "egzanp": [
+     "Mete asyèt yo sou tab la."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "kay"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "uit",
+  "mo": "uit",
+  "varyant": [],
+  "pwononsyasyon": "ɥ i t",
+  "let_alfabe": "ui",
+  "sans": [
+   {
+    "kategori": "nimewo",
+    "definisyon": "Nimewo ki vini apre sèt epi anvan nèf (8).",
+    "egzanp": [
+     "Lekòl la kòmanse a uit è."
+    ]
+   }
+  ],
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "vant",
+  "mo": "vant",
+  "varyant": [],
+  "pwononsyasyon": "v ã t",
+  "let_alfabe": "v",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Pati devan kò a, nan mitan, kote manje a ale apre ou fin vale l.",
+    "egzanp": [
+     "Timoun nan gen vant fè mal paske li manje twòp."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "bouch"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "wout",
+  "mo": "wout",
+  "varyant": [],
+  "pwononsyasyon": "w u t",
+  "let_alfabe": "w",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Chemen kote moun, machin ak bèt pase pou yo ale yon kote.",
+    "egzanp": [
+     "Wout la bon pou rive Jakmèl."
+    ]
+   }
+  ],
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "yo",
+  "mo": "yo",
+  "varyant": [],
+  "pwononsyasyon": "j o",
+  "let_alfabe": "y",
+  "sans": [
+   {
+    "kategori": "pwonon",
+    "definisyon": "Plizyè moun oswa bagay ou pa ladan yo. Apre yon non, li di gen plizyè.",
+    "egzanp": [
+     "Timoun yo ap jwe nan lakou a."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "nou"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "zanmi",
+  "mo": "zanmi",
+  "varyant": [],
+  "pwononsyasyon": "z ã m i",
+  "let_alfabe": "z",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Yon moun ou renmen epi ou fè konfyans, ki pa fanmi w.",
+    "egzanp": [
+     "Zanmi m vin ede m fè devwa."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "fanmi"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ },
+ {
+  "id": "zo",
+  "mo": "zo",
+  "varyant": [],
+  "pwononsyasyon": "z o",
+  "let_alfabe": "o",
+  "sans": [
+   {
+    "kategori": "non",
+    "definisyon": "Pati di ki fòme kò moun ak bèt, anndan vyann nan.",
+    "egzanp": [
+     "Chen an ap ronje yon zo."
+    ]
+   }
+  ],
+  "mo_ki_gen_rapo": {
+   "gade_tou": [
+    "chen"
+   ]
+  },
+  "sous": {
+   "ekri_pa": "Ayiti Dijital",
+   "baze_sou": "bouyon"
+  },
+  "estati": {
+   "nivo": "bouyon",
+   "revize_pa": [],
+   "dat": "2026-10-27"
+  }
+ }
+]

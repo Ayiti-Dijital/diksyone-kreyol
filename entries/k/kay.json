@@ -1,0 +1,31 @@
+{
+  "id": "kay",
+  "mo": "kay",
+  "varyant": [],
+  "pwononsyasyon": "k a j",
+  "let_alfabe": "k",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Yon batiman kote moun rete, dòmi epi viv ak fanmi yo.",
+      "egzanp": [
+        "Kay nou an gen twa chanm."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "pòt",
+      "tab"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "wout",
+  "mo": "wout",
+  "varyant": [],
+  "pwononsyasyon": "w u t",
+  "let_alfabe": "w",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Chemen kote moun, machin ak bèt pase pou yo ale yon kote.",
+      "egzanp": [
+        "Wout la bon pou rive Jakmèl."
+      ]
+    }
+  ],
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

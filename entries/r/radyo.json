@@ -1,0 +1,30 @@
+{
+  "id": "radyo",
+  "mo": "radyo",
+  "varyant": [],
+  "pwononsyasyon": "ɣ a d j o",
+  "let_alfabe": "r",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Aparèy ki resevwa son ki soti lwen, pou moun koute nouvèl ak mizik.",
+      "egzanp": [
+        "Papa m ap koute nouvèl nan radyo a."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "papa"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

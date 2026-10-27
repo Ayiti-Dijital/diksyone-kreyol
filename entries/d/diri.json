@@ -1,0 +1,30 @@
+{
+  "id": "diri",
+  "mo": "diri",
+  "varyant": [],
+  "pwononsyasyon": "d i ɣ i",
+  "let_alfabe": "i",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Ti grenn yo kwit pou manje. Se youn nan manje prensipal ann Ayiti.",
+      "egzanp": [
+        "Diri ak pwa se yon plat nou renmen anpil."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "jaden"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

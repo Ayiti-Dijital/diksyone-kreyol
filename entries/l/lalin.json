@@ -1,0 +1,30 @@
+{
+  "id": "lalin",
+  "mo": "lalin",
+  "varyant": [],
+  "pwononsyasyon": "l a l i n",
+  "let_alfabe": "l",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Gwo boul ki klere nan syèl la lannwit epi ki vire toutotou tè a.",
+      "egzanp": [
+        "Lalin nan klere tout lakou a aswè a."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "solèy"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

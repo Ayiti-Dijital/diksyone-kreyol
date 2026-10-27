@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "node tools/build-index.mjs && ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "node tools/build-index.mjs && ng test",
+    "index": "node tools/build-index.mjs"
   },
   "private": true,
   "packageManager": "pnpm@10.15.0",

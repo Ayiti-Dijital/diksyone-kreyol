@@ -9,7 +9,8 @@
           Diksyonè Kreyòl–Kreyòl
         </h1>
         <p class="mt-1 font-medium text-text">
-          Chak mo Kreyòl, esplike an Kreyòl – gratis e louvri. Byento: premye mo yo ap vini.
+          Chak mo Kreyòl, esplike an Kreyòl – gratis e louvri. {{ entries.length }} premye mo yo la,
+          tout se bouyon.
         </p>
       </div>
     </div>
@@ -18,23 +19,9 @@
     </div>
   </section>
 
-  <section id="alfabe-seksyon" class="card mt-6" aria-labelledby="alfabe">
-    <h2 id="alfabe" class="sr-only">Alfabè Kreyòl la: 32 lèt ak gwoup lèt</h2>
-    <ul
-      aria-labelledby="alfabe"
-      class="flex flex-wrap justify-center px-1 py-1 text-sm font-semibold uppercase lg:justify-between lg:px-3"
-    >
-      @for (letter of alfabe; track letter) {
-        <li
-          class="grid min-h-9 min-w-8 place-items-center px-1"
-          [class.text-red]="letter.length > 1"
-          [class.text-link]="letter.length === 1"
-        >
-          {{ letter }}
-        </li>
-      }
-    </ul>
-  </section>
+  <div id="alfabe-seksyon" class="mt-6 scroll-mt-4">
+    <dk-alfabe-bar />
+  </div>
 
   <div class="grid gap-10 py-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
     <!-- Main column -->
@@ -43,7 +30,9 @@
         <dk-section-title icon="sun" headingId="mo-jou-a-tit">Mo jou a</dk-section-title>
         <article aria-labelledby="mo-konbit" class="card p-6 sm:p-8">
           <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <h3 id="mo-konbit" class="text-3xl font-bold text-link">konbit</h3>
+            <h3 id="mo-konbit" class="text-3xl font-bold text-link">
+              <a routerLink="/mo/konbit" class="hover:underline">konbit</a>
+            </h3>
             <span class="font-mono text-muted">/kɔ̃bit/</span>
             <span class="text-muted italic">non</span>
             <span
@@ -80,6 +69,29 @@
             >
           </div>
         </article>
+      </section>
+
+      <section aria-labelledby="tout-mo-tit">
+        <dk-section-title icon="letters" headingId="tout-mo-tit"
+          >Mo nan diksyonè a</dk-section-title
+        >
+        <div class="card p-6 sm:p-8">
+          <ul class="flex flex-wrap gap-2">
+            @for (entry of entries; track entry.id) {
+              <li>
+                <a
+                  [routerLink]="['/mo', entry.id]"
+                  class="inline-block rounded-full bg-mist px-3 py-1.5 text-sm font-medium text-link hover:bg-line"
+                  >{{ entry.mo }}</a
+                >
+              </li>
+            }
+          </ul>
+          <p class="mt-4 text-sm text-muted">
+            Yon mo pou chak son nan alfabè a, plis konbit. Tout se bouyon: yon moun ki pale Kreyòl
+            kòm lang manman l dwe tcheke yo.
+          </p>
+        </div>
       </section>
 
       <section aria-labelledby="sa-li-ye">

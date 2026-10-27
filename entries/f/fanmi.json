@@ -1,0 +1,31 @@
+{
+  "id": "fanmi",
+  "mo": "fanmi",
+  "varyant": [],
+  "pwononsyasyon": "f ã m i",
+  "let_alfabe": "f",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Moun ki gen menm san oswa ki viv ansanm: papa, manman, pitit, frè, sè ak lòt paran.",
+      "egzanp": [
+        "Tout fanmi an reyini pou Nwèl."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "papa",
+      "manman"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

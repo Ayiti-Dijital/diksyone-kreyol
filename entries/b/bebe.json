@@ -1,0 +1,30 @@
+{
+  "id": "bebe",
+  "mo": "bebe",
+  "varyant": [],
+  "pwononsyasyon": "b e b e",
+  "let_alfabe": "e",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Yon timoun ki fèk fèt, ki poko ka mache ni pale.",
+      "egzanp": [
+        "Bebe a ap dòmi nan bra manman l."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "manman"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

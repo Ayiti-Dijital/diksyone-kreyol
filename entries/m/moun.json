@@ -1,0 +1,31 @@
+{
+  "id": "moun",
+  "mo": "moun",
+  "varyant": [],
+  "pwononsyasyon": "m u n",
+  "let_alfabe": "oun",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Yon nonm, yon fanm oswa yon timoun; yon èt imen.",
+      "egzanp": [
+        "Gen anpil moun nan mache a jodi a."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "mache",
+      "zanmi"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "chen",
+  "mo": "chen",
+  "varyant": [],
+  "pwononsyasyon": "ʃ ɛ̃",
+  "let_alfabe": "en",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Yon bèt kay ki jape, ki veye kay la epi ki zanmi moun.",
+      "egzanp": [
+        "Chen an jape lè yon moun frape pòt la."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "chat",
+      "pòt"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

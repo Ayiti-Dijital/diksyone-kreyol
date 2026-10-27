@@ -74,10 +74,27 @@
     @case ('empty') {
       <p class="mt-3 text-center text-muted">Ekri yon mo anvan ou chèche.</p>
     }
-    @case ('not-ready') {
+    @case ('some') {
+      <div class="mt-3 rounded-md border border-line bg-mist px-4 py-3 text-text">
+        <p>
+          Mo ki kòmanse ak <strong class="text-link">«{{ word() }}»</strong>:
+        </p>
+        <ul class="mt-2 flex flex-wrap gap-2">
+          @for (entry of entries(); track entry.id) {
+            <li>
+              <a
+                [routerLink]="['/mo', entry.id]"
+                class="inline-block rounded-full bg-white px-3 py-1.5 font-medium text-link ring-1 ring-line hover:ring-link"
+                >{{ entry.mo }}</a
+              >
+            </li>
+          }
+        </ul>
+      </div>
+    }
+    @case ('none') {
       <p class="mt-3 rounded-md border border-line bg-mist px-4 py-3 text-center text-text">
-        Diksyonè a poko pare, kidonk nou poko ka montre w mo
-        <strong class="text-link">«{{ word() }}»</strong>.
+        Nou poko gen mo <strong class="text-link">«{{ word() }}»</strong> nan diksyonè a.
         <a
           [href]="proposeHref()"
           class="ml-1 font-semibold whitespace-nowrap text-red underline underline-offset-4"

@@ -1,0 +1,30 @@
+{
+  "id": "bilding",
+  "mo": "bilding",
+  "varyant": [],
+  "pwononsyasyon": "b i l d i ŋ",
+  "let_alfabe": "ng",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Yon gwo batiman ki gen plizyè etaj.",
+      "egzanp": [
+        "Biwo a nan yon gwo bilding lavil."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "kay"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}

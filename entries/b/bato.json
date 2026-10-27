@@ -1,0 +1,30 @@
+{
+  "id": "bato",
+  "mo": "bato",
+  "varyant": [],
+  "pwononsyasyon": "b a t o",
+  "let_alfabe": "b",
+  "sans": [
+    {
+      "kategori": "non",
+      "definisyon": "Yon gwo bagay ki flote sou dlo epi ki pote moun oswa machandiz sou lanmè oswa sou rivyè.",
+      "egzanp": [
+        "Bato a kite pò a bonè maten an."
+      ]
+    }
+  ],
+  "mo_ki_gen_rapo": {
+    "gade_tou": [
+      "dlo"
+    ]
+  },
+  "sous": {
+    "ekri_pa": "Ayiti Dijital",
+    "baze_sou": "bouyon"
+  },
+  "estati": {
+    "nivo": "bouyon",
+    "revize_pa": [],
+    "dat": "2026-10-27"
+  }
+}
