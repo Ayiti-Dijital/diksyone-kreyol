@@ -25,8 +25,8 @@ describe('Mo', () => {
     expect(page.querySelector('dk-word-actions')).toBeTruthy();
   });
 
-  it('titles the meanings in the singular or plural', async () => {
-    expect((await render('fèt')).querySelector('#sans-tit')?.textContent?.trim()).toBe('Sans yo');
+  it('titles the meanings Sans, also when there are several', async () => {
+    expect((await render('fèt')).querySelector('#sans-tit')?.textContent?.trim()).toBe('Sans');
   });
 
   it('uses the singular title for one meaning', async () => {
@@ -71,10 +71,10 @@ describe('Mo', () => {
       a.textContent?.trim(),
     );
     expect(menu).toEqual([
-      'Ekriti',
+      'Òtograf',
       'Sans',
       'Orijin',
-      'Ekspresyon yo',
+      'Ekspresyon',
       'Mo ki ale avè l',
       'Gade tou',
       'Feyte diksyonè a',

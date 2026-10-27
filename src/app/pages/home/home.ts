@@ -1,4 +1,3 @@
-import { NgTemplateOutlet } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { AlfabeBar } from '../../shared/alfabe-bar/alfabe-bar';
@@ -16,9 +15,9 @@ interface Tile {
   readonly title: string;
   readonly text: string;
   readonly icon: IconName;
-  /** Full Tailwind classes for the tile and its "Byento" ribbon. */
-  readonly color: string;
-  readonly ribbon: string;
+  /** Full Tailwind classes for the colored top edge and the icon badge. */
+  readonly accent: string;
+  readonly badge: string;
   readonly path?: string;
 }
 
@@ -27,7 +26,6 @@ const count = (key: 'sinonim' | 'kontre') =>
 
 @Component({
   imports: [
-    NgTemplateOutlet,
     RouterLink,
     AlfabeBar,
     Breadcrumb,
@@ -54,31 +52,31 @@ export class Home {
     {
       title: 'Diksyonè Kreyòl',
       text: `${ENTRIES.length} mo, ak definisyon, egzanp ak pwononsyasyon an Kreyòl…`,
-      icon: 'az',
-      color: 'bg-navy-deep',
-      ribbon: '',
+      icon: 'book',
+      accent: 'border-navy',
+      badge: 'bg-navy/10 text-navy',
       path: '/let/a',
     },
     {
       title: 'Sinonim ak kontrè',
       text: `${count('sinonim')} sinonim, ${count('kontre')} kontrè… sa ap grandi ak chak mo.`,
       icon: 'letters',
-      color: 'bg-link',
-      ribbon: 'bg-red text-white',
+      accent: 'border-red',
+      badge: 'bg-red/10 text-red',
     },
     {
       title: 'Gramè Kreyòl',
       text: 'Detèminan, mak tan ak aspè, fraz: gramè Kreyòl la, esplike senp.',
-      icon: 'book',
-      color: 'bg-gold-deep',
-      ribbon: 'bg-red text-white',
+      icon: 'license',
+      accent: 'border-gold',
+      badge: 'bg-gold/20 text-gold-deep',
     },
     {
       title: 'Diksyonè pou lekòl',
       text: 'Diksyonè pou timoun 7–10 an ak 10–15 an.',
       icon: 'school',
-      color: 'bg-red',
-      ribbon: 'bg-gold text-navy-deep',
+      accent: 'border-periwinkle',
+      badge: 'bg-periwinkle/40 text-link',
     },
   ];
   protected readonly helpHref = mailto('Diksyonè Kreyòl – mwen vle ede');

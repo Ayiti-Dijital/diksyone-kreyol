@@ -3,7 +3,13 @@
 <div class="mx-auto max-w-6xl px-4 sm:px-6">
   <section class="card mt-2 p-6 sm:p-8" aria-labelledby="tit-paj">
     <div class="flex items-start gap-4 sm:gap-5">
-      <dk-icon name="az" class="size-12 shrink-0 text-link sm:size-14" />
+      <img
+        src="brand/mark-light.svg"
+        alt=""
+        width="56"
+        height="56"
+        class="size-12 shrink-0 sm:size-14"
+      />
       <div>
         <h1 id="tit-paj" class="text-2xl tracking-wide text-link uppercase sm:text-3xl">
           Diksyonè Kreyòl–Kreyòl
@@ -23,104 +29,105 @@
     <dk-alfabe-bar />
   </div>
 
-  <section class="card mt-6 p-4 sm:p-6" aria-labelledby="zouti-tit">
-    <h2 id="zouti-tit" class="sr-only">Zouti diksyonè a</h2>
-    <ul class="grid gap-4 md:grid-cols-2">
+  <section id="mo-jou-a" class="mt-10 scroll-mt-4" aria-labelledby="mo-jou-a-tit">
+    <dk-section-title icon="sun" headingId="mo-jou-a-tit">Mo jou a</dk-section-title>
+    <article aria-labelledby="mo-konbit" class="card p-6 sm:p-8">
+      <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+        <h3 id="mo-konbit" class="text-3xl font-bold text-link">
+          <a routerLink="/mo/konbit" class="hover:underline">konbit</a>
+        </h3>
+        <span class="font-mono text-muted">/kɔ̃bit/</span>
+        <span class="text-muted italic">non</span>
+        <span
+          class="ml-auto rounded bg-sand px-2 py-0.5 text-xs font-semibold text-gold-deep uppercase"
+        >
+          bouyon
+        </span>
+      </div>
+      <p class="mt-1 text-sm text-muted">Silab: kon·bit</p>
+
+      <ol class="mt-5 space-y-3 border-t border-line pt-5">
+        <li class="flex gap-3">
+          <span class="font-semibold text-link">1.</span>
+          <div>
+            <p class="leading-relaxed text-text">
+              Travay ansanm: vwazen ak zanmi vin ede yon moun fè yon gwo travay, tankou travay
+              jaden, san yo pa peye yo. Moun ki resevwa èd la bay manje.
+            </p>
+            <p class="mt-2 text-muted italic">
+              «Tout katye a te vin nan konbit la pou plante pwa.»
+            </p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="mt-6 flex flex-wrap items-center justify-between gap-4">
+        <p class="text-sm text-muted">
+          Bouyon: yon moun ki pale Kreyòl kòm lang manman l poko tcheke antre sa a.
+        </p>
+        <a
+          [href]="wordHref"
+          class="rounded-full bg-navy px-5 py-2.5 text-sm font-semibold text-white hover:bg-navy-deep"
+          >Ekri nou sou mo sa a</a
+        >
+      </div>
+    </article>
+  </section>
+
+  <section class="mt-10" aria-labelledby="zouti-tit">
+    <dk-section-title icon="book" headingId="zouti-tit">Zouti diksyonè a</dk-section-title>
+    <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
       @for (tile of tiles; track tile.title) {
-        <li class="relative min-h-52 overflow-hidden text-white" [class]="tile.color">
+        <li
+          class="card relative flex flex-col overflow-hidden border-t-4 p-6"
+          [class]="tile.accent"
+        >
+          <img
+            src="brand/mark-light.svg"
+            alt=""
+            aria-hidden="true"
+            width="128"
+            height="128"
+            class="pointer-events-none absolute -right-8 -bottom-8 size-32 opacity-[0.07]"
+          />
+          <span class="grid size-12 place-items-center rounded-full" [class]="tile.badge">
+            <dk-icon [name]="tile.icon" class="size-6" />
+          </span>
+          <h3 class="mt-4 text-lg font-bold text-ink">{{ tile.title }}</h3>
+          <p class="mt-2 flex-1 text-sm leading-relaxed text-ink-soft">{{ tile.text }}</p>
           @if (tile.path) {
-            <a [routerLink]="tile.path" class="group block h-full p-6 pr-24 sm:p-8 sm:pr-28">
-              <ng-container *ngTemplateOutlet="content; context: { $implicit: tile }" />
-              <span
+            <a
+              [routerLink]="tile.path"
+              class="mt-5 inline-flex items-center gap-2 self-start rounded-full bg-navy px-4 py-2 text-sm font-semibold text-white after:absolute after:inset-0 hover:bg-navy-deep"
+            >
+              Louvri
+              <svg
                 aria-hidden="true"
-                class="absolute right-0 bottom-0 grid size-24 place-items-center rounded-tl-[4rem] bg-white pt-3 pl-3 text-link transition-transform group-hover:translate-x-1"
+                viewBox="0 0 24 24"
+                class="size-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               >
-                <svg
-                  viewBox="0 0 24 24"
-                  class="size-7"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M4 12h15M14 6l6 6-6 6" />
-                </svg>
-              </span>
+                <path d="M4 12h15M14 6l6 6-6 6" />
+              </svg>
             </a>
           } @else {
-            <div class="h-full p-6 pr-20 sm:p-8 sm:pr-24">
-              <ng-container *ngTemplateOutlet="content; context: { $implicit: tile }" />
-            </div>
             <span
-              class="absolute top-6 -right-12 w-48 rotate-45 py-1 text-center text-xs font-bold tracking-widest uppercase shadow"
-              [class]="tile.ribbon"
+              class="mt-5 self-start rounded-full bg-sand px-3 py-1 text-xs font-semibold tracking-wider text-gold-deep uppercase"
               >Byento</span
             >
           }
         </li>
       }
     </ul>
-    <ng-template #content let-tile>
-      @if (tile.path) {
-        <dk-icon [name]="tile.icon" class="absolute top-6 right-6 size-12 opacity-80" />
-      }
-      <h3 class="max-w-[17rem] text-2xl leading-tight font-extrabold tracking-wide uppercase">
-        {{ tile.title }}
-      </h3>
-      <span aria-hidden="true" class="mt-4 block h-px w-3/4 bg-white/70"></span>
-      <p class="mt-4 max-w-xs font-semibold">{{ tile.text }}</p>
-    </ng-template>
   </section>
 
   <div class="grid gap-10 py-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
     <!-- Main column -->
     <div class="space-y-12">
-      <section id="mo-jou-a" class="scroll-mt-4" aria-labelledby="mo-jou-a-tit">
-        <dk-section-title icon="sun" headingId="mo-jou-a-tit">Mo jou a</dk-section-title>
-        <article aria-labelledby="mo-konbit" class="card p-6 sm:p-8">
-          <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <h3 id="mo-konbit" class="text-3xl font-bold text-link">
-              <a routerLink="/mo/konbit" class="hover:underline">konbit</a>
-            </h3>
-            <span class="font-mono text-muted">/kɔ̃bit/</span>
-            <span class="text-muted italic">non</span>
-            <span
-              class="ml-auto rounded bg-sand px-2 py-0.5 text-xs font-semibold text-gold-deep uppercase"
-            >
-              bouyon
-            </span>
-          </div>
-          <p class="mt-1 text-sm text-muted">Silab: kon·bit</p>
-
-          <ol class="mt-5 space-y-3 border-t border-line pt-5">
-            <li class="flex gap-3">
-              <span class="font-semibold text-link">1.</span>
-              <div>
-                <p class="leading-relaxed text-text">
-                  Travay ansanm: vwazen ak zanmi vin ede yon moun fè yon gwo travay, tankou travay
-                  jaden, san yo pa peye yo. Moun ki resevwa èd la bay manje.
-                </p>
-                <p class="mt-2 text-muted italic">
-                  «Tout katye a te vin nan konbit la pou plante pwa.»
-                </p>
-              </div>
-            </li>
-          </ol>
-
-          <div class="mt-6 flex flex-wrap items-center justify-between gap-4">
-            <p class="text-sm text-muted">
-              Bouyon: yon moun ki pale Kreyòl kòm lang manman l poko tcheke antre sa a.
-            </p>
-            <a
-              [href]="wordHref"
-              class="rounded-full bg-navy px-5 py-2.5 text-sm font-semibold text-white hover:bg-navy-deep"
-              >Ekri nou sou mo sa a</a
-            >
-          </div>
-        </article>
-      </section>
-
       <section id="kwiz" class="scroll-mt-4" aria-labelledby="kwiz-tit">
         <dk-section-title icon="quiz" headingId="kwiz-tit">Kwiz</dk-section-title>
         @defer (on viewport) {

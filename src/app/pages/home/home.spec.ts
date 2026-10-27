@@ -32,6 +32,20 @@ describe('Home', () => {
     expect(decodeURIComponent(letters[1].getAttribute('href') ?? '')).toBe('/let/an');
   });
 
+  it('shows the word of the day right after the alphabet', () => {
+    const order = [
+      ...page.querySelectorAll('#alfabe-seksyon, #mo-jou-a, section[aria-labelledby="zouti-tit"]'),
+    ];
+    expect(order.map((el) => el.id || 'zouti')).toEqual(['alfabe-seksyon', 'mo-jou-a', 'zouti']);
+  });
+
+  it('shows four tool tiles: the dictionary opens, the others are coming soon', () => {
+    const tiles = [...page.querySelectorAll('section[aria-labelledby="zouti-tit"] li')];
+    expect(tiles.length).toBe(4);
+    expect(tiles[0].querySelector('a[href="/let/a"]')?.textContent).toContain('Louvri');
+    expect(tiles.slice(1).every((tile) => tile.textContent?.includes('Byento'))).toBe(true);
+  });
+
   it('lists every word of the dictionary', () => {
     expect(page.querySelectorAll('section[aria-labelledby="tout-mo-tit"] li').length).toBe(33);
   });

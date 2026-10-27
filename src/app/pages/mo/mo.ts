@@ -64,16 +64,15 @@ export class Mo {
     const entry = this.entry();
     if (!entry) return [];
     const related = entry.mo_ki_gen_rapo;
-    const count = (label: string, n: number) => (n > 1 ? `${label} yo` : label);
     return [
-      { id: 'ekriti', label: 'Ekriti' },
-      { id: 'sans', label: count('Sans', entry.sans.length) },
+      { id: 'otograf', label: 'Òtograf' },
+      { id: 'sans', label: 'Sans' },
       ...(related?.sinonim?.length || related?.kontre?.length
         ? [{ id: 'sinonim', label: 'Sinonim ak kontrè' }]
         : []),
       ...(entry.orijin ? [{ id: 'orijin', label: 'Orijin' }] : []),
       ...(entry.ekspresyon?.length
-        ? [{ id: 'ekspresyon', label: count('Ekspresyon', entry.ekspresyon.length) }]
+        ? [{ id: 'ekspresyon', label: 'Ekspresyon' }]
         : []),
       ...((entry.konbinezon?.length ?? 0) >= MIN_KONBINEZON
         ? [{ id: 'konbinezon', label: 'Mo ki ale avè l' }]
