@@ -66,6 +66,7 @@ export class Mo {
     const related = entry.mo_ki_gen_rapo;
     const count = (label: string, n: number) => (n > 1 ? `${label} yo` : label);
     return [
+      { id: 'ekriti', label: 'Ekriti' },
       { id: 'sans', label: count('Sans', entry.sans.length) },
       ...(related?.sinonim?.length || related?.kontre?.length
         ? [{ id: 'sinonim', label: 'Sinonim ak kontrè' }]

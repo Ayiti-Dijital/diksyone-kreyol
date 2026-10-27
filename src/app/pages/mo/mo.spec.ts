@@ -18,8 +18,8 @@ describe('Mo', () => {
     const page = await render('fèt');
     expect(page.querySelector('h1')?.textContent).toContain('fèt');
     expect(page.textContent).toContain('/fɛt/');
-    expect(page.querySelectorAll('article ol li').length).toBe(2);
-    expect(page.textContent).toContain('«Li fèt Okap.»');
+    expect(page.querySelectorAll('article ol > li').length).toBe(2);
+    expect(page.textContent).toContain('Li fèt Okap.');
     expect(page.textContent).toContain('bouyon');
     expect(page.querySelector('a[href="/let/%C3%A8"]')).toBeTruthy();
     expect(page.querySelector('dk-word-actions')).toBeTruthy();
@@ -71,6 +71,7 @@ describe('Mo', () => {
       a.textContent?.trim(),
     );
     expect(menu).toEqual([
+      'Ekriti',
       'Sans',
       'Orijin',
       'Ekspresyon yo',
