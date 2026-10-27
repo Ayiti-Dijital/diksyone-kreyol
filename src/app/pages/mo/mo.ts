@@ -5,6 +5,9 @@ import { ENTRIES, displayPhones, findEntry } from '../../shared/diksyone';
 import { mailto } from '../../shared/site';
 import { WordActions } from '../../shared/word-actions/word-actions';
 
+/** How many words the browse lists show on each side. */
+const BROWSE = 10;
+
 /** One word of the dictionary: /mo/:id */
 @Component({
   imports: [RouterLink, Breadcrumb, WordActions],
@@ -33,6 +36,17 @@ export class Mo {
     return index < 0
       ? { before: undefined, after: undefined }
       : { before: ENTRIES[index - 1], after: ENTRIES[index + 1] };
+  });
+
+  /** Up to ten words before and after this one, to browse like a print dictionary. */
+  protected readonly browse = computed(() => {
+    const index = ENTRIES.findIndex((entry) => entry.id === this.entry()?.id);
+    return index < 0
+      ? { before: [], after: [] }
+      : {
+          before: ENTRIES.slice(Math.max(0, index - BROWSE), index),
+          after: ENTRIES.slice(index + 1, index + 1 + BROWSE),
+        };
   });
 
   protected readonly crumbs = computed<readonly Crumb[]>(() => [

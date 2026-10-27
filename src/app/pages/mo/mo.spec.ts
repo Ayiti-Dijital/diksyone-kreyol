@@ -40,6 +40,23 @@ describe('Mo', () => {
     );
   });
 
+  it('lists up to ten words before and after, like a print dictionary', async () => {
+    const page = await render('konbit');
+    const words = (label: string) =>
+      [...page.querySelectorAll(`ul[aria-label="${label}"] a`)].map((a) => a.textContent?.trim());
+    const before = words('Mo anvan nan alfabè a');
+    const after = words('Mo apre nan alfabè a');
+    expect(before.length).toBe(10);
+    expect(before.at(-1)).toBe('kay');
+    expect(after.length).toBe(10);
+    expect(after[0]).toBe('lalin');
+  });
+
+  it('says when a word is the first one', async () => {
+    const page = await render('bato');
+    expect(page.textContent).toContain('Se premye mo nan diksyonè a.');
+  });
+
   it('offers to propose a word that is not in the dictionary', async () => {
     const page = await render('lekol');
     expect(page.querySelector('h1')?.textContent).toContain('Nou poko gen mo «lekol»');
