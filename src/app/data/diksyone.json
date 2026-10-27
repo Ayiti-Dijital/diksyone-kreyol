@@ -35,7 +35,25 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "bonè",
+    "kantite": 1
+   },
+   {
+    "mo": "kite",
+    "kantite": 1
+   },
+   {
+    "mo": "maten",
+    "kantite": 1
+   },
+   {
+    "mo": "pò",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "bebe",
@@ -73,7 +91,21 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "bra",
+    "kantite": 1
+   },
+   {
+    "mo": "dòmi",
+    "kantite": 1
+   },
+   {
+    "mo": "manman",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "bilding",
@@ -111,7 +143,21 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "biwo",
+    "kantite": 1
+   },
+   {
+    "mo": "gwo",
+    "kantite": 1
+   },
+   {
+    "mo": "lavil",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "bonbon",
@@ -147,7 +193,21 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "bay",
+    "kantite": 1
+   },
+   {
+    "mo": "chak",
+    "kantite": 1
+   },
+   {
+    "mo": "timoun",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "bouch",
@@ -187,7 +247,25 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "doktè",
+    "kantite": 1
+   },
+   {
+    "mo": "fèmen",
+    "kantite": 1
+   },
+   {
+    "mo": "gade",
+    "kantite": 1
+   },
+   {
+    "mo": "louvri",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "chat",
@@ -224,7 +302,17 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "chèz",
+    "kantite": 1
+   },
+   {
+    "mo": "dòmi",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "chen",
@@ -265,7 +353,41 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "frape",
+    "kantite": 1
+   },
+   {
+    "mo": "grangou",
+    "kantite": 1
+   },
+   {
+    "mo": "jape",
+    "kantite": 1
+   },
+   {
+    "mo": "jwe",
+    "kantite": 1
+   },
+   {
+    "mo": "moun",
+    "kantite": 1
+   },
+   {
+    "mo": "pòt",
+    "kantite": 1
+   },
+   {
+    "mo": "ronje",
+    "kantite": 1
+   },
+   {
+    "mo": "zo",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "diri",
@@ -306,7 +428,61 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "pwa",
+    "kantite": 3
+   },
+   {
+    "mo": "anpil",
+    "kantite": 1
+   },
+   {
+    "mo": "ansanm",
+    "kantite": 1
+   },
+   {
+    "mo": "chodyè",
+    "kantite": 1
+   },
+   {
+    "mo": "fanmi",
+    "kantite": 1
+   },
+   {
+    "mo": "fè",
+    "kantite": 1
+   },
+   {
+    "mo": "kole",
+    "kantite": 1
+   },
+   {
+    "mo": "kwit",
+    "kantite": 1
+   },
+   {
+    "mo": "manman",
+    "kantite": 1
+   },
+   {
+    "mo": "menm",
+    "kantite": 1
+   },
+   {
+    "mo": "plat",
+    "kantite": 1
+   },
+   {
+    "mo": "renmen",
+    "kantite": 1
+   },
+   {
+    "mo": "tout",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "dlo",
@@ -346,7 +522,73 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "je",
+    "kantite": 2
+   },
+   {
+    "mo": "moun",
+    "kantite": 2
+   },
+   {
+    "mo": "bagay",
+    "kantite": 1
+   },
+   {
+    "mo": "bay",
+    "kantite": 1
+   },
+   {
+    "mo": "farin",
+    "kantite": 1
+   },
+   {
+    "mo": "fè",
+    "kantite": 1
+   },
+   {
+    "mo": "flote",
+    "kantite": 1
+   },
+   {
+    "mo": "fou",
+    "kantite": 1
+   },
+   {
+    "mo": "gwo",
+    "kantite": 1
+   },
+   {
+    "mo": "koule",
+    "kantite": 1
+   },
+   {
+    "mo": "kriye",
+    "kantite": 1
+   },
+   {
+    "mo": "kwit",
+    "kantite": 1
+   },
+   {
+    "mo": "lanmè",
+    "kantite": 1
+   },
+   {
+    "mo": "leven",
+    "kantite": 1
+   },
+   {
+    "mo": "machandiz",
+    "kantite": 1
+   },
+   {
+    "mo": "manje",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "fanmi",
@@ -382,7 +624,69 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "fè",
+    "kantite": 2
+   },
+   {
+    "mo": "moun",
+    "kantite": 2
+   },
+   {
+    "mo": "tout",
+    "kantite": 2
+   },
+   {
+    "mo": "batiman",
+    "kantite": 1
+   },
+   {
+    "mo": "diri",
+    "kantite": 1
+   },
+   {
+    "mo": "dòmi",
+    "kantite": 1
+   },
+   {
+    "mo": "konfyans",
+    "kantite": 1
+   },
+   {
+    "mo": "kote",
+    "kantite": 1
+   },
+   {
+    "mo": "manman",
+    "kantite": 1
+   },
+   {
+    "mo": "nwèl",
+    "kantite": 1
+   },
+   {
+    "mo": "pwa",
+    "kantite": 1
+   },
+   {
+    "mo": "renmen",
+    "kantite": 1
+   },
+   {
+    "mo": "rete",
+    "kantite": 1
+   },
+   {
+    "mo": "reyini",
+    "kantite": 1
+   },
+   {
+    "mo": "viv",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "fèt",
@@ -432,7 +736,73 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "anivèsè",
+    "kantite": 2
+   },
+   {
+    "mo": "bòn",
+    "kantite": 1
+   },
+   {
+    "mo": "di",
+    "kantite": 1
+   },
+   {
+    "mo": "fè",
+    "kantite": 1
+   },
+   {
+    "mo": "fèk",
+    "kantite": 1
+   },
+   {
+    "mo": "gato",
+    "kantite": 1
+   },
+   {
+    "mo": "jou",
+    "kantite": 1
+   },
+   {
+    "mo": "ka",
+    "kantite": 1
+   },
+   {
+    "mo": "koupe",
+    "kantite": 1
+   },
+   {
+    "mo": "mache",
+    "kantite": 1
+   },
+   {
+    "mo": "mari",
+    "kantite": 1
+   },
+   {
+    "mo": "moun",
+    "kantite": 1
+   },
+   {
+    "mo": "ni",
+    "kantite": 1
+   },
+   {
+    "mo": "okap",
+    "kantite": 1
+   },
+   {
+    "mo": "pale",
+    "kantite": 1
+   },
+   {
+    "mo": "poko",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "gato",
@@ -468,7 +838,17 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "fèt",
+    "kantite": 1
+   },
+   {
+    "mo": "koupe",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "hach",
@@ -497,7 +877,21 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "bwa",
+    "kantite": 1
+   },
+   {
+    "mo": "fann",
+    "kantite": 1
+   },
+   {
+    "mo": "pran",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "jaden",
@@ -532,7 +926,73 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "travay",
+    "kantite": 2
+   },
+   {
+    "mo": "ansanm",
+    "kantite": 1
+   },
+   {
+    "mo": "bay",
+    "kantite": 1
+   },
+   {
+    "mo": "depi",
+    "kantite": 1
+   },
+   {
+    "mo": "èd",
+    "kantite": 1
+   },
+   {
+    "mo": "ede",
+    "kantite": 1
+   },
+   {
+    "mo": "fè",
+    "kantite": 1
+   },
+   {
+    "mo": "granmoun",
+    "kantite": 1
+   },
+   {
+    "mo": "gwo",
+    "kantite": 1
+   },
+   {
+    "mo": "manje",
+    "kantite": 1
+   },
+   {
+    "mo": "maten",
+    "kantite": 1
+   },
+   {
+    "mo": "moun",
+    "kantite": 1
+   },
+   {
+    "mo": "peye",
+    "kantite": 1
+   },
+   {
+    "mo": "resevwa",
+    "kantite": 1
+   },
+   {
+    "mo": "san",
+    "kantite": 1
+   },
+   {
+    "mo": "tankou",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "kay",
@@ -566,7 +1026,73 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "bèt",
+    "kantite": 2
+   },
+   {
+    "mo": "antre",
+    "kantite": 1
+   },
+   {
+    "mo": "chanm",
+    "kantite": 1
+   },
+   {
+    "mo": "fè",
+    "kantite": 1
+   },
+   {
+    "mo": "jape",
+    "kantite": 1
+   },
+   {
+    "mo": "kenbe",
+    "kantite": 1
+   },
+   {
+    "mo": "louvri",
+    "kantite": 1
+   },
+   {
+    "mo": "machin",
+    "kantite": 1
+   },
+   {
+    "mo": "moun",
+    "kantite": 1
+   },
+   {
+    "mo": "myaw",
+    "kantite": 1
+   },
+   {
+    "mo": "pati",
+    "kantite": 1
+   },
+   {
+    "mo": "pwal",
+    "kantite": 1
+   },
+   {
+    "mo": "soti",
+    "kantite": 1
+   },
+   {
+    "mo": "sourit",
+    "kantite": 1
+   },
+   {
+    "mo": "ti",
+    "kantite": 1
+   },
+   {
+    "mo": "twa",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "konbit",
@@ -607,7 +1133,29 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "katye",
+    "kantite": 1
+   },
+   {
+    "mo": "plante",
+    "kantite": 1
+   },
+   {
+    "mo": "pwa",
+    "kantite": 1
+   },
+   {
+    "mo": "tout",
+    "kantite": 1
+   },
+   {
+    "mo": "vin",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "lalin",
@@ -648,7 +1196,45 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "klere",
+    "kantite": 2
+   },
+   {
+    "mo": "tout",
+    "kantite": 2
+   },
+   {
+    "mo": "aswè",
+    "kantite": 1
+   },
+   {
+    "mo": "boul",
+    "kantite": 1
+   },
+   {
+    "mo": "fè",
+    "kantite": 1
+   },
+   {
+    "mo": "lakou",
+    "kantite": 1
+   },
+   {
+    "mo": "nèt",
+    "kantite": 1
+   },
+   {
+    "mo": "plen",
+    "kantite": 1
+   },
+   {
+    "mo": "won",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "mache",
@@ -690,7 +1276,65 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "al",
+    "kantite": 2
+   },
+   {
+    "mo": "timoun",
+    "kantite": 2
+   },
+   {
+    "mo": "anpil",
+    "kantite": 1
+   },
+   {
+    "mo": "fèk",
+    "kantite": 1
+   },
+   {
+    "mo": "fèt",
+    "kantite": 1
+   },
+   {
+    "mo": "jodi",
+    "kantite": 1
+   },
+   {
+    "mo": "ka",
+    "kantite": 1
+   },
+   {
+    "mo": "lekòl",
+    "kantite": 1
+   },
+   {
+    "mo": "manman",
+    "kantite": 1
+   },
+   {
+    "mo": "moun",
+    "kantite": 1
+   },
+   {
+    "mo": "ni",
+    "kantite": 1
+   },
+   {
+    "mo": "pale",
+    "kantite": 1
+   },
+   {
+    "mo": "poko",
+    "kantite": 1
+   },
+   {
+    "mo": "samdi",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "manman",
@@ -726,7 +1370,73 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "fè",
+    "kantite": 2
+   },
+   {
+    "mo": "papa",
+    "kantite": 2
+   },
+   {
+    "mo": "paran",
+    "kantite": 2
+   },
+   {
+    "mo": "pitit",
+    "kantite": 2
+   },
+   {
+    "mo": "al",
+    "kantite": 1
+   },
+   {
+    "mo": "ansanm",
+    "kantite": 1
+   },
+   {
+    "mo": "bebe",
+    "kantite": 1
+   },
+   {
+    "mo": "bra",
+    "kantite": 1
+   },
+   {
+    "mo": "diri",
+    "kantite": 1
+   },
+   {
+    "mo": "dòmi",
+    "kantite": 1
+   },
+   {
+    "mo": "fanmi",
+    "kantite": 1
+   },
+   {
+    "mo": "frè",
+    "kantite": 1
+   },
+   {
+    "mo": "gason",
+    "kantite": 1
+   },
+   {
+    "mo": "lòt",
+    "kantite": 1
+   },
+   {
+    "mo": "mache",
+    "kantite": 1
+   },
+   {
+    "mo": "menm",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "moun",
@@ -770,7 +1480,73 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "di",
+    "kantite": 5
+   },
+   {
+    "mo": "ansanm",
+    "kantite": 4
+   },
+   {
+    "mo": "bèt",
+    "kantite": 4
+   },
+   {
+    "mo": "kote",
+    "kantite": 4
+   },
+   {
+    "mo": "bagay",
+    "kantite": 3
+   },
+   {
+    "mo": "lòt",
+    "kantite": 3
+   },
+   {
+    "mo": "manje",
+    "kantite": 3
+   },
+   {
+    "mo": "san",
+    "kantite": 3
+   },
+   {
+    "mo": "viv",
+    "kantite": 3
+   },
+   {
+    "mo": "anpil",
+    "kantite": 2
+   },
+   {
+    "mo": "dlo",
+    "kantite": 2
+   },
+   {
+    "mo": "fanmi",
+    "kantite": 2
+   },
+   {
+    "mo": "fè",
+    "kantite": 2
+   },
+   {
+    "mo": "gwo",
+    "kantite": 2
+   },
+   {
+    "mo": "jape",
+    "kantite": 2
+   },
+   {
+    "mo": "lanmè",
+    "kantite": 2
+   }
+  ]
  },
  {
   "id": "nou",
@@ -804,7 +1580,8 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": []
  },
  {
   "id": "papa",
@@ -846,7 +1623,73 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "bondye",
+    "kantite": 2
+   },
+   {
+    "mo": "manman",
+    "kantite": 2
+   },
+   {
+    "mo": "moun",
+    "kantite": 2
+   },
+   {
+    "mo": "paran",
+    "kantite": 2
+   },
+   {
+    "mo": "pitit",
+    "kantite": 2
+   },
+   {
+    "mo": "ansanm",
+    "kantite": 1
+   },
+   {
+    "mo": "fason",
+    "kantite": 1
+   },
+   {
+    "mo": "fè",
+    "kantite": 1
+   },
+   {
+    "mo": "frè",
+    "kantite": 1
+   },
+   {
+    "mo": "gason",
+    "kantite": 1
+   },
+   {
+    "mo": "jodi",
+    "kantite": 1
+   },
+   {
+    "mo": "koute",
+    "kantite": 1
+   },
+   {
+    "mo": "lavil",
+    "kantite": 1
+   },
+   {
+    "mo": "lòt",
+    "kantite": 1
+   },
+   {
+    "mo": "menm",
+    "kantite": 1
+   },
+   {
+    "mo": "nouvèl",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "pen",
@@ -881,7 +1724,25 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "chak",
+    "kantite": 1
+   },
+   {
+    "mo": "manba",
+    "kantite": 1
+   },
+   {
+    "mo": "manje",
+    "kantite": 1
+   },
+   {
+    "mo": "maten",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "pòt",
@@ -915,7 +1776,33 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "chen",
+    "kantite": 1
+   },
+   {
+    "mo": "fèmen",
+    "kantite": 1
+   },
+   {
+    "mo": "frape",
+    "kantite": 1
+   },
+   {
+    "mo": "jape",
+    "kantite": 1
+   },
+   {
+    "mo": "moun",
+    "kantite": 1
+   },
+   {
+    "mo": "soti",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "radyo",
@@ -950,7 +1837,21 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "koute",
+    "kantite": 1
+   },
+   {
+    "mo": "nouvèl",
+    "kantite": 1
+   },
+   {
+    "mo": "papa",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "solèy",
@@ -995,7 +1896,45 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "anpil",
+    "kantite": 1
+   },
+   {
+    "mo": "aswè",
+    "kantite": 1
+   },
+   {
+    "mo": "cho",
+    "kantite": 1
+   },
+   {
+    "mo": "disparèt",
+    "kantite": 1
+   },
+   {
+    "mo": "kouche",
+    "kantite": 1
+   },
+   {
+    "mo": "leve",
+    "kantite": 1
+   },
+   {
+    "mo": "maten",
+    "kantite": 1
+   },
+   {
+    "mo": "midi",
+    "kantite": 1
+   },
+   {
+    "mo": "parèt",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "tab",
@@ -1029,7 +1968,17 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "asyèt",
+    "kantite": 1
+   },
+   {
+    "mo": "mete",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "uit",
@@ -1058,7 +2007,17 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "kòmanse",
+    "kantite": 1
+   },
+   {
+    "mo": "lekòl",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "vant",
@@ -1092,7 +2051,49 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "fè",
+    "kantite": 1
+   },
+   {
+    "mo": "mal",
+    "kantite": 1
+   },
+   {
+    "mo": "manje",
+    "kantite": 1
+   },
+   {
+    "mo": "manman",
+    "kantite": 1
+   },
+   {
+    "mo": "paske",
+    "kantite": 1
+   },
+   {
+    "mo": "soti",
+    "kantite": 1
+   },
+   {
+    "mo": "tè",
+    "kantite": 1
+   },
+   {
+    "mo": "timoun",
+    "kantite": 1
+   },
+   {
+    "mo": "twòp",
+    "kantite": 1
+   },
+   {
+    "mo": "vin",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "wout",
@@ -1132,7 +2133,21 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "bon",
+    "kantite": 2
+   },
+   {
+    "mo": "jakmèl",
+    "kantite": 1
+   },
+   {
+    "mo": "rive",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "yo",
@@ -1165,7 +2180,8 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": []
  },
  {
   "id": "zanmi",
@@ -1203,7 +2219,73 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "ede",
+    "kantite": 2
+   },
+   {
+    "mo": "fè",
+    "kantite": 2
+   },
+   {
+    "mo": "moun",
+    "kantite": 2
+   },
+   {
+    "mo": "vin",
+    "kantite": 2
+   },
+   {
+    "mo": "ansanm",
+    "kantite": 1
+   },
+   {
+    "mo": "bay",
+    "kantite": 1
+   },
+   {
+    "mo": "bèt",
+    "kantite": 1
+   },
+   {
+    "mo": "devwa",
+    "kantite": 1
+   },
+   {
+    "mo": "èd",
+    "kantite": 1
+   },
+   {
+    "mo": "gwo",
+    "kantite": 1
+   },
+   {
+    "mo": "jaden",
+    "kantite": 1
+   },
+   {
+    "mo": "jape",
+    "kantite": 1
+   },
+   {
+    "mo": "kay",
+    "kantite": 1
+   },
+   {
+    "mo": "manje",
+    "kantite": 1
+   },
+   {
+    "mo": "peye",
+    "kantite": 1
+   },
+   {
+    "mo": "resevwa",
+    "kantite": 1
+   }
+  ]
  },
  {
   "id": "zo",
@@ -1237,6 +2319,16 @@
    "nivo": "bouyon",
    "revize_pa": [],
    "dat": "2026-10-27"
-  }
+  },
+  "konbinezon": [
+   {
+    "mo": "chen",
+    "kantite": 1
+   },
+   {
+    "mo": "ronje",
+    "kantite": 1
+   }
+  ]
  }
 ]

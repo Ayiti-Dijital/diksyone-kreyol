@@ -70,7 +70,14 @@ describe('Mo', () => {
     const menu = [...page.querySelectorAll('nav[aria-label="Sou paj sa a"] a')].map((a) =>
       a.textContent?.trim(),
     );
-    expect(menu).toEqual(['Sans', 'Orijin', 'Ekspresyon yo', 'Gade tou', 'Feyte diksyonè a']);
+    expect(menu).toEqual([
+      'Sans',
+      'Orijin',
+      'Ekspresyon yo',
+      'Mo ki ale avè l',
+      'Gade tou',
+      'Feyte diksyonè a',
+    ]);
     expect(page.querySelector('#ekspresyon')?.textContent).toContain('solèy kouche');
     expect(page.querySelector('#orijin')?.textContent).toContain('«soleil»');
   });
@@ -82,6 +89,18 @@ describe('Mo', () => {
     expect(section.textContent).toContain('lènmi');
     expect(section.querySelector('a')).toBeNull();
     expect(page.querySelector('#ekspresyon')).toBeNull();
+  });
+
+  it('shows a word cloud with the headword in the middle', async () => {
+    const page = await render('manman');
+    const words = [...page.querySelectorAll('#konbinezon li')].map((li) => li.textContent?.trim());
+    expect(words.length).toBeGreaterThanOrEqual(5);
+    expect(words[Math.floor(words.length / 2)]).toBe('manman');
+    expect(page.querySelector('#konbinezon a[href="/mo/papa"]')).toBeTruthy();
+  });
+
+  it('leaves the cloud out when there are too few words', async () => {
+    expect((await render('uit')).querySelector('#konbinezon')).toBeNull();
   });
 
   it('offers to propose a word that is not in the dictionary', async () => {

@@ -1,6 +1,6 @@
-<header class="bg-white">
+<header class="sticky top-0 z-40 bg-white shadow-[0_1px_0_var(--color-line)]">
   <div
-    class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-5 sm:px-6 md:flex-row md:justify-between"
+    class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-3 sm:px-6 md:flex-row md:justify-between md:gap-4 md:py-5"
   >
     <a
       routerLink="/"
@@ -27,7 +27,7 @@
           routerLinkActive="!border-link !text-link"
           [routerLinkActiveOptions]="{ exact: true }"
           ariaCurrentWhenActive="page"
-          class="inline-block border-b-2 border-transparent px-3 py-3 text-ink hover:text-link"
+          class="inline-block border-b-2 border-transparent px-3 py-2 text-ink hover:text-link md:py-3"
           >Diksyonè</a
         >
       </li>
@@ -36,7 +36,7 @@
           routerLink="/jwet"
           routerLinkActive="!border-link !text-link"
           ariaCurrentWhenActive="page"
-          class="inline-block border-b-2 border-transparent px-3 py-3 text-ink hover:text-link"
+          class="inline-block border-b-2 border-transparent px-3 py-2 text-ink hover:text-link md:py-3"
           >Jwèt</a
         >
       </li>
@@ -44,7 +44,7 @@
         <a
           routerLink="/"
           fragment="ede-nou"
-          class="inline-block border-b-2 border-transparent px-3 py-3 text-ink hover:text-link"
+          class="inline-block border-b-2 border-transparent px-3 py-2 text-ink hover:text-link md:py-3"
           >Ede nou</a
         >
       </li>

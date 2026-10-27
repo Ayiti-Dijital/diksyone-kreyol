@@ -9,6 +9,28 @@ import { WordActions } from '../../shared/word-actions/word-actions';
 /** How many words the browse lists show on each side. */
 const BROWSE = 5;
 
+/** The word cloud only shows when the dictionary's sentences give at least this many words. */
+const MIN_KONBINEZON = 4;
+
+/** Text sizes of the word cloud, most frequent words first. */
+const CLOUD_SIZES = [
+  'text-2xl',
+  'text-2xl',
+  'text-xl',
+  'text-xl',
+  'text-xl',
+  'text-lg',
+  'text-lg',
+  'text-lg',
+];
+
+/** One word in the cloud of typical combinations. */
+interface CloudWord {
+  readonly mo: string;
+  readonly size: string;
+  readonly center: boolean;
+}
+
 /** A section of the word card, listed in the menu on the left. */
 interface PageSection {
   readonly id: string;
@@ -52,6 +74,9 @@ export class Mo {
       ...(entry.ekspresyon?.length
         ? [{ id: 'ekspresyon', label: count('Ekspresyon', entry.ekspresyon.length) }]
         : []),
+      ...((entry.konbinezon?.length ?? 0) >= MIN_KONBINEZON
+        ? [{ id: 'konbinezon', label: 'Mo ki ale avè l' }]
+        : []),
       ...(related?.gade_tou?.length ? [{ id: 'gade-tou', label: 'Gade tou' }] : []),
       { id: 'feyte', label: 'Feyte diksyonè a' },
     ];
@@ -77,6 +102,24 @@ export class Mo {
   protected title(id: string): string {
     return this.sections().find((section) => section.id === id)?.label ?? '';
   }
+
+  /**
+   * The word cloud: the headword big in the middle, the most frequent companions near it and
+   * bigger, the rest smaller around them.
+   */
+  protected readonly cloud = computed<readonly CloudWord[]>(() => {
+    const entry = this.entry();
+    const words = (entry?.konbinezon ?? []).map((item, rank) => ({
+      mo: item.mo,
+      size: CLOUD_SIZES[rank] ?? 'text-base',
+      center: false,
+    }));
+    if (!entry || words.length < MIN_KONBINEZON) return [];
+    const left: CloudWord[] = [];
+    const right: CloudWord[] = [];
+    words.forEach((word, i) => (i % 2 ? right : left).push(word));
+    return [...left.reverse(), { mo: entry.mo, size: 'text-5xl', center: true }, ...right];
+  });
 
   /** Synonyms and antonyms link to their page when the dictionary has them. */
   protected isEntry(word: string): boolean {

@@ -26,6 +26,8 @@ export interface Entry {
   readonly ekspresyon?: readonly { readonly ekspresyon: string; readonly sans: string }[];
   /** Where the word comes from, in one sentence. */
   readonly orijin?: string;
+  /** Words that often appear in the same sentences, computed by `tools/build-index.mjs`. */
+  readonly konbinezon?: readonly { readonly mo: string; readonly kantite: number }[];
   readonly sous: { readonly ekri_pa: string; readonly baze_sou?: string };
   readonly estati: { readonly nivo: 'bouyon' | 'revize' | 'valide'; readonly dat: string };
 }

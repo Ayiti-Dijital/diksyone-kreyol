@@ -38,6 +38,17 @@
     background-color: var(--color-mist);
   }
 
+  /* Jumps to a section stop below the sticky header. */
+  html {
+    scroll-padding-top: 11rem;
+  }
+
+  @media (min-width: 48rem) {
+    html {
+      scroll-padding-top: 9rem;
+    }
+  }
+
   :focus-visible {
     outline: 3px solid var(--color-gold);
     outline-offset: 3px;

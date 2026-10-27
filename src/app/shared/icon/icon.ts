@@ -16,7 +16,8 @@ export type IconName =
   | 'quote'
   | 'share'
   | 'copy'
-  | 'speaker';
+  | 'speaker'
+  | 'school';
 
 /** Small line icons drawn for this site. Decorative: hidden from screen readers. */
 @Component({
