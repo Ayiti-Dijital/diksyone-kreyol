@@ -6,7 +6,7 @@ import { mailto } from '../../shared/site';
 import { WordActions } from '../../shared/word-actions/word-actions';
 
 /** How many words the browse lists show on each side. */
-const BROWSE = 10;
+const BROWSE = 5;
 
 /** One word of the dictionary: /mo/:id */
 @Component({
@@ -38,7 +38,7 @@ export class Mo {
       : { before: ENTRIES[index - 1], after: ENTRIES[index + 1] };
   });
 
-  /** Up to ten words before and after this one, to browse like a print dictionary. */
+  /** Up to five words before and after this one, to browse like a print dictionary. */
   protected readonly browse = computed(() => {
     const index = ENTRIES.findIndex((entry) => entry.id === this.entry()?.id);
     return index < 0

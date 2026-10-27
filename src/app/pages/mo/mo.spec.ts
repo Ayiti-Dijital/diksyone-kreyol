@@ -48,15 +48,15 @@ describe('Mo', () => {
     );
   });
 
-  it('lists up to ten words before and after, like a print dictionary', async () => {
+  it('lists up to five words before and after, like a print dictionary', async () => {
     const page = await render('konbit');
     const words = (label: string) =>
       [...page.querySelectorAll(`ul[aria-label="${label}"] a`)].map((a) => a.textContent?.trim());
     const before = words('Mo anvan nan alfabè a');
     const after = words('Mo apre nan alfabè a');
-    expect(before.length).toBe(10);
+    expect(before.length).toBe(5);
     expect(before.at(-1)).toBe('kay');
-    expect(after.length).toBe(10);
+    expect(after.length).toBe(5);
     expect(after[0]).toBe('lalin');
   });
 
