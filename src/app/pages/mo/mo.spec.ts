@@ -25,6 +25,14 @@ describe('Mo', () => {
     expect(page.querySelector('dk-word-actions')).toBeTruthy();
   });
 
+  it('titles the meanings in the singular or plural', async () => {
+    expect((await render('fèt')).querySelector('#sans-tit')?.textContent?.trim()).toBe('Sans yo');
+  });
+
+  it('uses the singular title for one meaning', async () => {
+    expect((await render('konbit')).querySelector('#sans-tit')?.textContent?.trim()).toBe('Sans');
+  });
+
   it('shows the syllables of the word', async () => {
     const page = await render('konbit');
     expect(page.querySelector('article strong[aria-label="kon, bit"]')?.textContent?.trim()).toBe(
