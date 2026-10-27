@@ -1,0 +1,64 @@
+<div class="flex items-center gap-1 sm:gap-3" role="group" aria-label="Aksyon pou mo a">
+  <button
+    type="button"
+    (click)="openCite()"
+    aria-label="Site mo a"
+    title="Site mo a"
+    class="grid size-11 place-items-center rounded-full text-ink hover:bg-mist"
+  >
+    <dk-icon name="quote" class="size-6" />
+  </button>
+  <button
+    type="button"
+    (click)="share()"
+    aria-label="Pataje"
+    title="Pataje"
+    class="grid size-11 place-items-center rounded-full text-ink hover:bg-mist"
+  >
+    <dk-icon name="share" class="size-6" />
+  </button>
+  <button
+    type="button"
+    (click)="copyWord()"
+    aria-label="Kopye mo a"
+    title="Kopye mo a"
+    class="grid size-11 place-items-center rounded-full text-ink hover:bg-mist"
+  >
+    <dk-icon name="copy" class="size-6" />
+  </button>
+  <button
+    type="button"
+    (click)="speak()"
+    aria-label="Koute mo a"
+    title="Koute mo a"
+    class="grid size-12 place-items-center rounded-full bg-gold text-ink hover:bg-[#e09506]"
+  >
+    <dk-icon name="speaker" class="size-6" />
+  </button>
+</div>
+<p aria-live="polite" class="mt-1 min-h-5 text-sm text-muted">{{ notice() }}</p>
+
+<dialog
+  #citeDialog
+  aria-labelledby="site-tit"
+  class="m-auto w-[min(32rem,calc(100%-2rem))] rounded-md bg-white p-6 text-text shadow-xl backdrop:bg-ink/40"
+>
+  <h2 id="site-tit" class="text-lg font-semibold text-link">Kijan pou site mo sa a</h2>
+  <p class="mt-3 rounded bg-mist p-3 text-sm leading-relaxed select-all">{{ citation() }}</p>
+  <div class="mt-5 flex flex-wrap justify-end gap-2">
+    <button
+      type="button"
+      (click)="closeCite()"
+      class="rounded-full px-5 py-2 text-sm font-semibold text-link ring-1 ring-link/40 hover:bg-mist"
+    >
+      Fèmen
+    </button>
+    <button
+      type="button"
+      (click)="copyCitation()"
+      class="rounded-full bg-link px-5 py-2 text-sm font-semibold text-white hover:bg-navy"
+    >
+      Kopye sitasyon an
+    </button>
+  </div>
+</dialog>

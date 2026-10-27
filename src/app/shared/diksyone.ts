@@ -12,6 +12,8 @@ export interface Entry {
   readonly mo: string;
   readonly varyant: readonly string[];
   readonly pwononsyasyon: string;
+  /** The syllables, e.g. ["kon", "bit"]. */
+  readonly silab: readonly string[];
   /** The alphabet letter or letter group this word is the sound example for. */
   readonly let_alfabe?: string;
   readonly sans: readonly Sense[];

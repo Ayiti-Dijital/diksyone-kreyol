@@ -38,6 +38,7 @@ for (const dir of readdirSync(ENTRIES, { withFileTypes: true })) {
     if (!phones.length) fail('"pwononsyasyon" is missing');
     for (const p of phones) if (!PHONES.has(p)) fail(`unknown phone "${p}"`);
     if (entry.let_alfabe && !LETTERS.has(entry.let_alfabe)) fail(`unknown letter "${entry.let_alfabe}"`);
+    if (!entry.silab?.length || entry.silab.join('') !== entry.mo) fail('"silab" must spell the word, e.g. ["kon", "bit"]');
     if (!entry.sans?.length) fail('needs at least one meaning in "sans"');
     for (const sens of entry.sans ?? []) {
       if (!CATEGORIES.has(sens.kategori)) fail(`unknown part of speech "${sens.kategori}"`);

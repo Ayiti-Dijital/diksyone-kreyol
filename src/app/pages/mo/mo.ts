@@ -3,10 +3,11 @@ import { RouterLink } from '@angular/router';
 import { Breadcrumb, Crumb } from '../../shared/breadcrumb/breadcrumb';
 import { ENTRIES, displayPhones, findEntry } from '../../shared/diksyone';
 import { mailto } from '../../shared/site';
+import { WordActions } from '../../shared/word-actions/word-actions';
 
 /** One word of the dictionary: /mo/:id */
 @Component({
-  imports: [RouterLink, Breadcrumb],
+  imports: [RouterLink, Breadcrumb, WordActions],
   selector: 'dk-mo',
   templateUrl: './mo.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -20,6 +21,8 @@ export class Mo {
     const entry = this.entry();
     return entry ? displayPhones(entry.pwononsyasyon) : '';
   });
+  /** Syllables with a bar between them, like a print dictionary: "kon|bit". */
+  protected readonly syllables = computed(() => this.entry()?.silab.join('|') ?? '');
   protected readonly categories = computed(() => [
     ...new Set(this.entry()?.sans.map((sens) => sens.kategori) ?? []),
   ]);

@@ -12,7 +12,11 @@ export type IconName =
   | 'grid-small'
   | 'grid-large'
   | 'letters'
-  | 'people';
+  | 'people'
+  | 'quote'
+  | 'share'
+  | 'copy'
+  | 'speaker';
 
 /** Small line icons drawn for this site. Decorative: hidden from screen readers. */
 @Component({
