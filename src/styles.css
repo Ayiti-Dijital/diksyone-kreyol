@@ -35,7 +35,7 @@
   }
 
   body {
-    background-color: #fff;
+    background-color: var(--color-mist);
   }
 
   :focus-visible {
@@ -56,4 +56,10 @@
       transition: none !important;
     }
   }
+}
+
+/* A white reference card with a soft shadow to the lower right. */
+@utility card {
+  background-color: #fff;
+  box-shadow: 4px 4px 12px rgb(23 30 70 / 0.12);
 }

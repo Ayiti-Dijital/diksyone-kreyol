@@ -1,38 +1,72 @@
 <form [formRoot]="searchForm" role="search" aria-label="Chèche nan diksyonè a">
-  <label for="mo" class="sr-only">Chèche yon mo</label>
-  <div
-    class="flex items-center rounded-full border border-line bg-white py-1 pr-1 pl-5 shadow-[0_1px_6px_rgba(23,30,70,0.08)] focus-within:border-link focus-within:ring-2 focus-within:ring-link/20"
-  >
-    <input
-      id="mo"
-      type="search"
-      [formField]="searchForm.mo"
-      placeholder="Chèche yon mo, egzanp: konbit"
-      autocomplete="off"
-      autocapitalize="none"
-      spellcheck="false"
-      enterkeyhint="search"
-      class="min-w-0 flex-1 bg-transparent py-2 text-base text-text placeholder:text-muted focus:outline-none"
-    />
-    <button
-      type="submit"
-      aria-label="Chèche"
-      class="grid size-10 shrink-0 place-items-center rounded-full bg-navy text-white hover:bg-navy-deep"
-    >
-      <svg
-        aria-hidden="true"
-        viewBox="0 0 24 24"
-        class="size-5"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2.2"
-        stroke-linecap="round"
+  <label [for]="inputId()" class="sr-only">Chèche yon mo</label>
+  @if (variant() === 'large') {
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+      <input
+        [id]="inputId()"
+        type="search"
+        [formField]="searchForm.mo"
+        placeholder="Chèche yon mo nan diksyonè a…"
+        autocomplete="off"
+        autocapitalize="none"
+        spellcheck="false"
+        enterkeyhint="search"
+        class="min-w-0 flex-1 rounded-full border border-line bg-white px-6 py-3 text-base text-text placeholder:text-muted placeholder:italic focus:border-link focus:ring-2 focus:ring-link/20 focus:outline-none"
+      />
+      <button
+        type="submit"
+        class="flex items-center justify-center gap-3 rounded-full bg-link px-8 py-3 font-medium tracking-wider text-white uppercase hover:bg-navy"
       >
-        <circle cx="11" cy="11" r="6.5" />
-        <path d="m20 20-4-4" />
-      </svg>
-    </button>
-  </div>
+        Chèche
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          class="size-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+        >
+          <circle cx="11" cy="11" r="6.5" />
+          <path d="m20 20-4-4" />
+        </svg>
+      </button>
+    </div>
+  } @else {
+    <div
+      class="flex items-center rounded-full border border-link/40 bg-white py-1 pr-2 pl-5 shadow-[2px_2px_6px_rgba(23,30,70,0.10)] focus-within:border-link focus-within:ring-2 focus-within:ring-link/20"
+    >
+      <input
+        [id]="inputId()"
+        type="search"
+        [formField]="searchForm.mo"
+        placeholder="Chèche yon mo, egzanp: konbit"
+        autocomplete="off"
+        autocapitalize="none"
+        spellcheck="false"
+        enterkeyhint="search"
+        class="min-w-0 flex-1 bg-transparent py-2 text-base text-text placeholder:text-muted placeholder:italic focus:outline-none"
+      />
+      <button
+        type="submit"
+        aria-label="Chèche"
+        class="grid size-10 shrink-0 place-items-center rounded-full text-ink hover:bg-mist"
+      >
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          class="size-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+        >
+          <circle cx="11" cy="11" r="6.5" />
+          <path d="m20 20-4-4" />
+        </svg>
+      </button>
+    </div>
+  }
 </form>
 
 <div aria-live="polite" class="text-sm">

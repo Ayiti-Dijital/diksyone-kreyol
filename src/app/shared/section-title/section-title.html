@@ -1,7 +1,8 @@
-<h2
-  [id]="headingId()"
-  class="mb-4 flex flex-col items-center gap-2 text-center text-sm font-semibold tracking-[0.2em] text-muted uppercase"
->
-  <dk-icon [name]="icon()" class="size-7 text-red" />
-  <ng-content />
+<h2 [id]="headingId()" class="mb-5 flex items-center gap-4 text-center">
+  <span aria-hidden="true" class="h-0.5 flex-1 bg-line"></span>
+  <span class="flex flex-col items-center gap-2 text-base tracking-[0.12em] text-ink uppercase">
+    <dk-icon [name]="icon()" class="size-9 text-link" />
+    <ng-content />
+  </span>
+  <span aria-hidden="true" class="h-0.5 flex-1 bg-line"></span>
 </h2>

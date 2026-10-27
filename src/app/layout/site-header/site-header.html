@@ -1,66 +1,67 @@
-<header>
-  <div class="bg-navy-deep text-periwinkle">
+<header class="bg-white">
+  <div class="border-b border-line">
     <div
-      class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-1 text-xs sm:px-6"
+      class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-1 text-xs text-muted sm:px-6"
     >
-      <a [href]="mainSiteUrl" class="inline-block py-1.5 hover:text-sand"
+      <a [href]="mainSiteUrl" class="inline-block py-1.5 hover:text-link"
         >Yon pwojè Ayiti Dijital</a
       >
       <span
-        class="rounded-full border border-gold/50 px-2.5 py-0.5 font-mono tracking-wider text-gold uppercase"
+        class="rounded-full border border-gold px-2.5 py-0.5 font-semibold tracking-wider text-gold-deep uppercase"
         >Byento</span
       >
     </div>
   </div>
 
-  <div class="border-b border-line bg-white">
-    <div class="mx-auto flex max-w-6xl flex-col items-center px-4 pt-5 sm:px-6">
-      <a
-        routerLink="/"
-        class="flex items-center gap-3 rounded"
-        aria-label="Diksyonè Kreyòl – paj dakèy"
+  <div
+    class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-5 sm:px-6 md:flex-row md:justify-between"
+  >
+    <a
+      routerLink="/"
+      class="flex items-center gap-3 rounded"
+      aria-label="Diksyonè Kreyòl – paj dakèy"
+    >
+      <img src="brand/mark-light.svg" alt="" width="36" height="36" class="size-8 sm:size-9" />
+      <span class="text-2xl font-light tracking-[0.08em] text-ink-soft uppercase sm:text-3xl"
+        >Diksyonè Kreyòl</span
       >
-        <img src="brand/mark-light.svg" alt="" width="36" height="36" class="size-8 sm:size-9" />
-        <span class="text-xl font-light tracking-[0.2em] text-navy uppercase sm:text-3xl"
-          >Diksyonè Kreyòl</span
-        >
-      </a>
-      <nav aria-label="Navigasyon prensipal" class="mt-2">
-        <ul
-          class="flex flex-wrap justify-center text-[0.8rem] font-medium tracking-wider uppercase"
-        >
-          <li>
-            <a
-              routerLink="/"
-              routerLinkActive="!text-red"
-              [routerLinkActiveOptions]="{ exact: true }"
-              ariaCurrentWhenActive="page"
-              class="inline-block px-3 py-2 text-muted hover:text-link"
-              >Diksyonè</a
-            >
-          </li>
-          <li>
-            <a
-              routerLink="/jwet"
-              routerLinkActive="!text-red"
-              ariaCurrentWhenActive="page"
-              class="inline-block px-3 py-2 text-muted hover:text-link"
-              >Jwèt</a
-            >
-          </li>
-          <li>
-            <a
-              routerLink="/"
-              fragment="ede-nou"
-              class="inline-block px-3 py-2 text-muted hover:text-link"
-              >Ede nou</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="mx-auto max-w-3xl px-4 pt-2 pb-4 sm:px-6">
-      <dk-search-preview />
+    </a>
+    <div class="w-full md:max-w-md">
+      <dk-search-preview inputId="mo" />
     </div>
   </div>
+
+  <nav aria-label="Navigasyon prensipal" class="border-b border-line">
+    <ul
+      class="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-2 px-4 text-sm tracking-wide uppercase sm:px-6 sm:text-base"
+    >
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="!border-link !text-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ariaCurrentWhenActive="page"
+          class="inline-block border-b-2 border-transparent px-3 py-3 text-ink hover:text-link"
+          >Diksyonè</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/jwet"
+          routerLinkActive="!border-link !text-link"
+          ariaCurrentWhenActive="page"
+          class="inline-block border-b-2 border-transparent px-3 py-3 text-ink hover:text-link"
+          >Jwèt</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/"
+          fragment="ede-nou"
+          class="inline-block border-b-2 border-transparent px-3 py-3 text-ink hover:text-link"
+          >Ede nou</a
+        >
+      </li>
+    </ul>
+  </nav>
 </header>

@@ -15,14 +15,14 @@ describe('Jwet', () => {
     await fixture.whenStable();
   });
 
-  it('lists six games, each marked as coming soon', () => {
-    const cards = page.querySelectorAll('ul > li[aria-labelledby^="jwet-"]');
+  it('shows three featured games and three game tiles, all coming soon', () => {
+    const cards = page.querySelectorAll('li[aria-labelledby^="jwet-"]');
     expect(cards.length).toBe(6);
     cards.forEach((card) => expect(card.textContent).toContain('Byento'));
   });
 
-  it('shows ten markers on the quiz card', () => {
-    expect(page.querySelectorAll('ol[aria-label="10 kesyon"] li').length).toBe(10);
+  it('shows five numbered steps on the quiz card', () => {
+    expect(page.querySelectorAll('ol[aria-label="5 kesyon"] > li').length).toBe(5);
   });
 
   it('answers the frequent questions in collapsible blocks', () => {

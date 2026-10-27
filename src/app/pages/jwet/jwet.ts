@@ -9,8 +9,17 @@ interface Game {
   readonly icon: IconName;
   readonly title: string;
   readonly description: string;
-  /** Number of questions, shown as small markers (quiz only). */
-  readonly questions?: number;
+}
+
+/** A featured game; `steps` draws the numbered markers of the quiz. */
+interface FeaturedGame extends Game {
+  readonly big?: boolean;
+  readonly steps?: readonly number[];
+}
+
+/** A game tile; `color` is a full Tailwind background class. */
+interface GameTile extends Game {
+  readonly color: string;
 }
 
 interface Question {
@@ -28,14 +37,7 @@ interface Question {
 export class Jwet {
   protected readonly crumbs: readonly Crumb[] = [{ label: 'Akèy', link: '/' }, { label: 'Jwèt' }];
 
-  protected readonly games: readonly Game[] = [
-    {
-      id: 'kwiz',
-      icon: 'quiz',
-      title: 'Kwiz Kreyòl',
-      description: 'Dis kesyon sou lang Kreyòl la ak kilti Ayiti. Konbyen ou ka jwenn?',
-      questions: 10,
-    },
+  protected readonly featured: readonly FeaturedGame[] = [
     {
       id: 'devinet',
       icon: 'riddle',
@@ -43,22 +45,12 @@ export class Jwet {
       description: 'Devinèt Kreyòl: nou poze devinèt la, ou chèche repons lan.',
     },
     {
-      id: 'ti-mo-kwaze',
-      icon: 'grid-small',
-      title: 'Ti mo kwaze',
-      description: 'Yon ti griy mo kwaze chak jou, pou senk minit.',
-    },
-    {
-      id: 'gwo-mo-kwaze',
-      icon: 'grid-large',
-      title: 'Gwo mo kwaze',
-      description: 'Mo kwaze klasik, ak definisyon an Kreyòl.',
-    },
-    {
-      id: 'cheche-mo',
-      icon: 'letters',
-      title: 'Chèche mo',
-      description: 'Jwenn mo Kreyòl ki kache nan mitan yon pakèt lèt.',
+      id: 'kwiz',
+      icon: 'quiz',
+      title: 'Kwiz Kreyòl',
+      description: 'Senk kesyon sou lang Kreyòl la ak kilti Ayiti.',
+      big: true,
+      steps: [1, 2, 3, 4, 5],
     },
     {
       id: 'kwiz-zanmi',
@@ -66,6 +58,40 @@ export class Jwet {
       title: 'Kwiz ak zanmi',
       description: 'Kreye pwòp kwiz ou epi jwe l an dirèk ak zanmi w.',
     },
+  ];
+
+  protected readonly tiles: readonly GameTile[] = [
+    {
+      id: 'ti-mo-kwaze',
+      icon: 'grid-small',
+      title: 'Ti mo kwaze',
+      description: 'Yon ti griy chak jou, pou senk minit.',
+      color: 'bg-[#2a6db0]',
+    },
+    {
+      id: 'cheche-mo',
+      icon: 'letters',
+      title: 'Chèche mo',
+      description: 'Jwenn mo ki kache nan mitan yon pakèt lèt.',
+      color: 'bg-red',
+    },
+    {
+      id: 'gwo-mo-kwaze',
+      icon: 'grid-large',
+      title: 'Gwo mo kwaze',
+      description: 'Mo kwaze klasik, ak definisyon an Kreyòl.',
+      color: 'bg-ink-soft',
+    },
+  ];
+
+  /** Positions of the small decorative stars on the dark background. */
+  protected readonly stars: readonly string[] = [
+    'top-[6%] left-[8%]',
+    'top-[18%] right-[10%]',
+    'top-[40%] left-[3%]',
+    'top-[46%] right-[30%]',
+    'top-[70%] left-[22%]',
+    'top-[84%] right-[6%]',
   ];
 
   protected readonly faq: readonly Question[] = [

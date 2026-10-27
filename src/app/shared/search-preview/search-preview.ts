@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 import { FormField, FormRoot, form } from '@angular/forms/signals';
 import { mailto } from '../site';
 
@@ -16,6 +16,11 @@ type Result = { kind: 'idle' } | { kind: 'empty' } | { kind: 'not-ready'; word: 
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SearchPreview {
+  /** `compact`: round field with an icon button (header). `large`: field plus a wide button. */
+  readonly variant = input<'compact' | 'large'>('compact');
+  /** Each search box on a page needs its own id. */
+  readonly inputId = input('mo');
+
   protected readonly result = signal<Result>({ kind: 'idle' });
 
   protected readonly searchForm = form(signal({ mo: '' }), {

@@ -1,18 +1,28 @@
 <dk-breadcrumb [items]="crumbs" />
 
 <div class="mx-auto max-w-6xl px-4 sm:px-6">
-  <div class="pt-6">
-    <h1 class="text-2xl font-medium text-link sm:text-3xl">Diksyonè Kreyòl–Kreyòl</h1>
-    <p class="mt-1 text-muted">
-      Chak mo Kreyòl, esplike an Kreyòl – gratis e louvri. Byento: premye mo yo ap vini.
-    </p>
-  </div>
+  <section class="card mt-2 p-6 sm:p-8" aria-labelledby="tit-paj">
+    <div class="flex items-start gap-4 sm:gap-5">
+      <dk-icon name="az" class="size-12 shrink-0 text-link sm:size-14" />
+      <div>
+        <h1 id="tit-paj" class="text-2xl tracking-wide text-link uppercase sm:text-3xl">
+          Diksyonè Kreyòl–Kreyòl
+        </h1>
+        <p class="mt-1 font-medium text-text">
+          Chak mo Kreyòl, esplike an Kreyòl – gratis e louvri. Byento: premye mo yo ap vini.
+        </p>
+      </div>
+    </div>
+    <div class="mt-6 border-t border-line pt-6 sm:px-6">
+      <dk-search-preview variant="large" inputId="mo-gran" />
+    </div>
+  </section>
 
-  <section id="alfabe-seksyon" class="mt-6" aria-labelledby="alfabe">
+  <section id="alfabe-seksyon" class="card mt-6" aria-labelledby="alfabe">
     <h2 id="alfabe" class="sr-only">Alfabè Kreyòl la: 32 lèt ak gwoup lèt</h2>
     <ul
       aria-labelledby="alfabe"
-      class="flex flex-wrap justify-center border-y border-line bg-mist px-1 py-1 text-sm font-semibold uppercase lg:justify-between lg:px-3"
+      class="flex flex-wrap justify-center px-1 py-1 text-sm font-semibold uppercase lg:justify-between lg:px-3"
     >
       @for (letter of alfabe; track letter) {
         <li
@@ -31,10 +41,7 @@
     <div class="space-y-12">
       <section id="mo-jou-a" class="scroll-mt-4" aria-labelledby="mo-jou-a-tit">
         <dk-section-title icon="sun" headingId="mo-jou-a-tit">Mo jou a</dk-section-title>
-        <article
-          aria-labelledby="mo-konbit"
-          class="rounded-md bg-white p-6 shadow-[0_2px_14px_rgba(23,30,70,0.10)] sm:p-8"
-        >
+        <article aria-labelledby="mo-konbit" class="card p-6 sm:p-8">
           <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
             <h3 id="mo-konbit" class="text-3xl font-bold text-link">konbit</h3>
             <span class="font-mono text-muted">/kɔ̃bit/</span>
@@ -77,7 +84,7 @@
 
       <section aria-labelledby="sa-li-ye">
         <dk-section-title icon="book" headingId="sa-li-ye">Sa diksyonè a ap ye</dk-section-title>
-        <div class="rounded-md bg-white p-6 shadow-[0_2px_14px_rgba(23,30,70,0.10)] sm:p-8">
+        <div class="card p-6 sm:p-8">
           <ul class="grid gap-6 sm:grid-cols-3">
             <li>
               <h3 class="font-semibold text-link">An Kreyòl nèt</h3>
@@ -107,7 +114,7 @@
     <aside class="space-y-12" aria-label="Plis enfòmasyon">
       <section id="ede-nou" class="scroll-mt-4" aria-labelledby="ede-nou-tit">
         <dk-section-title icon="heart" headingId="ede-nou-tit">Ede nou</dk-section-title>
-        <div class="rounded-md bg-white p-6 shadow-[0_2px_14px_rgba(23,30,70,0.10)]">
+        <div class="card p-6">
           <figure>
             <blockquote class="text-lg font-semibold text-navy">
               « Men anpil chay pa lou »
@@ -142,7 +149,7 @@
 
       <section aria-labelledby="jwet-tit">
         <dk-section-title icon="dice" headingId="jwet-tit">Jwèt</dk-section-title>
-        <div class="rounded-md bg-white p-6 shadow-[0_2px_14px_rgba(23,30,70,0.10)]">
+        <div class="card p-6">
           <p class="text-sm leading-relaxed">
             Kwiz, mo kwaze, devinèt… Jwe ak mo Kreyòl yo. Jwèt yo ap vini byento.
           </p>
@@ -156,9 +163,7 @@
 
       <section id="lisans" class="scroll-mt-4" aria-labelledby="lisans-tit">
         <dk-section-title icon="license" headingId="lisans-tit">Lisans</dk-section-title>
-        <div
-          class="rounded-md bg-white p-6 text-sm leading-relaxed shadow-[0_2px_14px_rgba(23,30,70,0.10)]"
-        >
+        <div class="card p-6 text-sm leading-relaxed">
           <p>
             <strong class="text-text">Done ak tèks:</strong>
             <a

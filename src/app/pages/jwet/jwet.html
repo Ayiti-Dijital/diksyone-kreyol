@@ -1,115 +1,170 @@
 <dk-breadcrumb [items]="crumbs" />
 
-<div class="mx-auto max-w-6xl px-4 sm:px-6">
-  <div class="pt-8 text-center">
-    <h1 class="text-3xl font-medium text-link sm:text-4xl">Jwèt Kreyòl</h1>
-    <p class="mx-auto mt-3 max-w-2xl leading-relaxed text-muted">
+<div class="relative mt-2 overflow-hidden bg-navy-deep text-sand">
+  @for (position of stars; track position) {
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      class="pointer-events-none absolute size-6 text-periwinkle/50"
+      [class]="position"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+    >
+      <path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9" />
+    </svg>
+  }
+
+  <div class="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
+    <h1 class="text-center text-3xl font-extrabold tracking-wide uppercase sm:text-4xl">
+      Jwèt Kreyòl
+    </h1>
+    <p class="mx-auto mt-3 max-w-2xl text-center leading-relaxed text-periwinkle">
       Jwe ak mo Kreyòl yo: kwiz, mo kwaze, devinèt ak plis ankò. Tout jwèt yo ap gratis, san kont.
       Byento.
     </p>
-  </div>
 
-  <section class="py-10" aria-labelledby="lis-jwet">
-    <h2 id="lis-jwet" class="sr-only">Lis jwèt yo</h2>
-    <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      @for (game of games; track game.id) {
-        <li
-          class="flex flex-col rounded-md bg-white p-6 shadow-[0_2px_14px_rgba(23,30,70,0.10)]"
-          [attr.aria-labelledby]="'jwet-' + game.id"
-        >
-          <div class="flex items-center gap-4">
-            <span class="grid size-14 shrink-0 place-items-center rounded-full bg-mist text-navy">
-              <dk-icon [name]="game.icon" class="size-7" />
-            </span>
-            <h3 [id]="'jwet-' + game.id" class="text-lg font-semibold text-link">
+    <section class="mt-12" aria-labelledby="jwet-vedet">
+      <h2 id="jwet-vedet" class="sr-only">Jwèt vedèt yo</h2>
+      <ul class="grid items-center gap-6 lg:grid-cols-[1fr_1.6fr_1fr]">
+        @for (game of featured; track game.id) {
+          <li
+            class="flex flex-col items-center rounded-xl bg-white/[0.07] px-6 text-center ring-1 ring-white/10"
+            [class]="game.big ? 'py-14' : 'py-10'"
+            [attr.aria-labelledby]="'jwet-' + game.id"
+          >
+            <dk-icon
+              [name]="game.icon"
+              class="text-sand"
+              [class]="game.big ? 'size-20' : 'size-16'"
+            />
+            <h3
+              [id]="'jwet-' + game.id"
+              class="mt-6 font-extrabold tracking-wider uppercase"
+              [class]="game.big ? 'text-3xl' : 'text-2xl'"
+            >
               {{ game.title }}
             </h3>
-          </div>
-          <p class="mt-4 flex-1 text-sm leading-relaxed">{{ game.description }}</p>
-          @if (game.questions) {
-            <ol class="mt-4 flex flex-wrap gap-1.5" [attr.aria-label]="game.questions + ' kesyon'">
-              @for (n of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; track n) {
-                <li
-                  class="grid size-6 place-items-center rounded-full border border-line text-[0.7rem] text-muted"
-                >
-                  {{ n }}
-                </li>
-              }
-            </ol>
-          }
-          <span
-            class="mt-5 block rounded-full bg-mist px-5 py-2.5 text-center text-sm font-semibold text-muted"
-            >Byento</span
-          >
-        </li>
-      }
-    </ul>
-  </section>
-
-  <section class="border-t border-line py-10" aria-labelledby="kijan">
-    <h2 id="kijan" class="text-center text-sm font-semibold tracking-[0.2em] text-muted uppercase">
-      Kijan jwèt yo ap mache
-    </h2>
-    <div class="mt-6 grid gap-8 md:grid-cols-3">
-      <div>
-        <h3 class="font-semibold text-link">Kwiz</h3>
-        <p class="mt-1 text-sm leading-relaxed">
-          Chak kesyon gen plizyè repons. Ou chwazi youn, epi ou wè touswit si se bon an, ak yon ti
-          esplikasyon an Kreyòl.
-        </p>
-      </div>
-      <div>
-        <h3 class="font-semibold text-link">Mo kwaze</h3>
-        <p class="mt-1 text-sm leading-relaxed">
-          Definisyon yo soti nan diksyonè a. Ou ekri mo yo nan griy la, youn apre lòt, orizontal ak
-          vètikal.
-        </p>
-      </div>
-      <div>
-        <h3 class="font-semibold text-link">Devinèt ak Chèche mo</h3>
-        <p class="mt-1 text-sm leading-relaxed">
-          Devinèt yo se jwèt tradisyonèl Ayiti. Nan Chèche mo, ou jwenn mo ki kache nan lèt yo.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="border-t border-line py-10" aria-labelledby="faq">
-    <h2 id="faq" class="text-center text-sm font-semibold tracking-[0.2em] text-muted uppercase">
-      Kesyon moun poze souvan
-    </h2>
-    <div
-      class="mx-auto mt-6 max-w-3xl divide-y divide-line rounded-md bg-white shadow-[0_2px_14px_rgba(23,30,70,0.10)]"
-    >
-      @for (item of faq; track item.question) {
-        <details class="group px-6 py-4">
-          <summary
-            class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-text"
-          >
-            {{ item.question }}
-            <span aria-hidden="true" class="text-link transition-transform group-open:rotate-45"
-              >+</span
+            <p class="mt-3 max-w-xs font-medium text-periwinkle">{{ game.description }}</p>
+            @if (game.steps) {
+              <ol class="mt-6 flex items-center" [attr.aria-label]="game.steps.length + ' kesyon'">
+                @for (step of game.steps; track step; let last = $last) {
+                  <li class="flex items-center">
+                    <span
+                      class="grid size-8 place-items-center rounded-full bg-periwinkle text-sm font-bold text-navy-deep"
+                      >{{ step }}</span
+                    >
+                    @if (!last) {
+                      <span aria-hidden="true" class="mx-1.5 h-0.5 w-4 bg-periwinkle/60"></span>
+                    }
+                  </li>
+                }
+              </ol>
+            }
+            <span
+              class="mt-6 rounded-full border border-gold/60 px-4 py-1 text-xs font-semibold tracking-wider text-gold uppercase"
+              >Byento</span
             >
-          </summary>
-          <p class="mt-2 text-sm leading-relaxed">{{ item.answer }}</p>
-        </details>
-      }
-    </div>
-  </section>
+          </li>
+        }
+      </ul>
+    </section>
 
-  <section class="border-t border-line py-10 text-center" aria-labelledby="sou-nou">
-    <h2 id="sou-nou" class="text-sm font-semibold tracking-[0.2em] text-muted uppercase">
-      Sou nou
-    </h2>
-    <p class="mx-auto mt-4 max-w-2xl leading-relaxed">
-      Jwèt Kreyòl se yon pwojè
-      <a [href]="mainSiteUrl" class="text-link hover:underline">Ayiti Dijital</a>, ansanm ak
-      Diksyonè Kreyòl la. Ou gen yon ide pou yon jwèt?
-    </p>
-    <a
-      [href]="ideaHref"
-      class="mt-5 inline-block rounded-full bg-navy px-6 py-2.5 text-sm font-semibold text-white hover:bg-navy-deep"
-      >Ekri nou</a
-    >
-  </section>
+    <section class="mt-16" aria-labelledby="tout-jwet">
+      <h2
+        id="tout-jwet"
+        class="text-center text-3xl font-extrabold tracking-wide uppercase sm:text-4xl"
+      >
+        Tout jwèt nou yo
+      </h2>
+      <ul class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        @for (game of tiles; track game.id) {
+          <li
+            class="flex flex-col items-center rounded-xl px-6 py-10 text-center text-white"
+            [class]="game.color"
+            [attr.aria-labelledby]="'jwet-' + game.id"
+          >
+            <dk-icon [name]="game.icon" class="size-20" />
+            <h3
+              [id]="'jwet-' + game.id"
+              class="mt-6 text-2xl font-extrabold tracking-wider uppercase"
+            >
+              {{ game.title }}
+            </h3>
+            <p class="mt-2 font-medium text-white/90">{{ game.description }}</p>
+            <span
+              class="mt-5 rounded-full bg-black/20 px-4 py-1 text-xs font-semibold tracking-wider uppercase"
+              >Byento</span
+            >
+          </li>
+        }
+      </ul>
+    </section>
+
+    <section class="mt-16 border-t border-white/10 pt-12" aria-labelledby="kijan">
+      <h2 id="kijan" class="text-center text-2xl font-extrabold tracking-wide uppercase">
+        Kijan jwèt yo ap mache
+      </h2>
+      <div class="mt-8 grid gap-8 md:grid-cols-3">
+        <div>
+          <h3 class="font-bold text-gold">Kwiz</h3>
+          <p class="mt-1 text-sm leading-relaxed text-periwinkle">
+            Chak kesyon gen plizyè repons. Ou chwazi youn, epi ou wè touswit si se bon an, ak yon ti
+            esplikasyon an Kreyòl.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-gold">Mo kwaze</h3>
+          <p class="mt-1 text-sm leading-relaxed text-periwinkle">
+            Definisyon yo soti nan diksyonè a. Ou ekri mo yo nan griy la, youn apre lòt, orizontal
+            ak vètikal.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-gold">Devinèt ak Chèche mo</h3>
+          <p class="mt-1 text-sm leading-relaxed text-periwinkle">
+            Devinèt yo se jwèt tradisyonèl Ayiti. Nan Chèche mo, ou jwenn mo ki kache nan lèt yo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-16 border-t border-white/10 pt-12" aria-labelledby="faq">
+      <h2 id="faq" class="text-center text-2xl font-extrabold tracking-wide uppercase">
+        Kesyon moun poze souvan
+      </h2>
+      <div
+        class="mx-auto mt-8 max-w-3xl divide-y divide-white/10 rounded-xl bg-white/[0.07] ring-1 ring-white/10"
+      >
+        @for (item of faq; track item.question) {
+          <details class="group px-6 py-4">
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold"
+            >
+              {{ item.question }}
+              <span aria-hidden="true" class="text-gold transition-transform group-open:rotate-45"
+                >+</span
+              >
+            </summary>
+            <p class="mt-2 text-sm leading-relaxed text-periwinkle">{{ item.answer }}</p>
+          </details>
+        }
+      </div>
+    </section>
+
+    <section class="mt-16 border-t border-white/10 pt-12 text-center" aria-labelledby="sou-nou">
+      <h2 id="sou-nou" class="text-2xl font-extrabold tracking-wide uppercase">Sou nou</h2>
+      <p class="mx-auto mt-4 max-w-2xl leading-relaxed text-periwinkle">
+        Jwèt Kreyòl se yon pwojè
+        <a [href]="mainSiteUrl" class="text-gold underline underline-offset-4">Ayiti Dijital</a>,
+        ansanm ak Diksyonè Kreyòl la. Ou gen yon ide pou yon jwèt?
+      </p>
+      <a
+        [href]="ideaHref"
+        class="mt-6 inline-block rounded-full bg-gold px-6 py-2.5 text-sm font-bold text-navy-deep hover:bg-sand"
+        >Ekri nou</a
+      >
+    </section>
+  </div>
 </div>
